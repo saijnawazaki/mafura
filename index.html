@@ -3,15 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>Mafura CSS</title>
-
+    <title>Mafura</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="mafura.css">
-
+    <link rel="stylesheet" href="dist/mafura.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/default.min.css">
-
-
   </head>
   <body>
     <nav class="navbar navbar-light">
@@ -21,7 +16,6 @@
           <span class="navbar-menu-bar mid"></span>
           <span class="navbar-menu-bar bot"></span>
         </button>
-
         <div class="navbar-title">
           <h1 class="color-red">Mafura</h1>
         </div>
@@ -35,8 +29,28 @@
       </div>
     </nav>
 
-
     <div class="container">
+      <section id="getting-started">
+        <h1>Getting Started</h1>
+        <hr>
+        <h5 id="getting-started_starter-template">Starter template</h5>
+<pre><code>&#x3C;!doctype html&#x3E;
+&#x3C;html lang=&#x22;en&#x22;&#x3E;
+  &#x3C;head&#x3E;
+    &#x3C;meta charset=&#x22;utf-8&#x22;&#x3E;
+    &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1, shrink-to-fit=no&#x22;&#x3E;
+    &#x3C;!-- Normalize --&#x3E;
+    &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css&#x22; integrity=&#x22;sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=&#x22; crossorigin=&#x22;anonymous&#x22; /&#x3E;
+    &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;dist/mafura.css&#x22;&#x3E;
+    &#x3C;title&#x3E;Hello World&#x3C;/title&#x3E;
+  &#x3C;/head&#x3E;
+  &#x3C;body&#x3E;
+    &#x3C;h1&#x3E;Hello World&#x3C;/h1&#x3E;
+
+    &#x3C;script src=&#x22;dist/mafura.js&#x22;&#x3E;&#x3C;/script&#x3E;
+  &#x3C;/body&#x3E;
+&#x3C;/html&#x3E;</code></pre>      </section>
+
       <h1>Wraps</h1>
       <hr>
       <section>
@@ -533,7 +547,7 @@ U can remove the container
 
 </div>
     <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
-    <script src="mafura.js"></script>
+    <script src="dist/mafura.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
