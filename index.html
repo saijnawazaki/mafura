@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Mafura CSS</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="mafura.css">
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/default.min.css">
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-light">
+      <div class="container">
+        <button class="navbar-menu-button" data-target="navbar-menu-content">
+          <span class="navbar-menu-bar top"></span>
+          <span class="navbar-menu-bar mid"></span>
+          <span class="navbar-menu-bar bot"></span>
+        </button>
+
+        <div class="navbar-title">
+          <h1 class="color-red">Mafura</h1>
+        </div>
+        <ul class="navbar-menu navbar-sm-hide" id="navbar-menu-content">
+          <li class="navbar-item"><a class="navbar-item-link" href="default.asp">Home</a></li>
+          <li class="navbar-item"><a class="navbar-item-link" href="news.asp">News</a></li>
+          <li class="navbar-item"><a class="navbar-item-link" href="contact.asp">Contact</a></li>
+          <li class="navbar-item"><a class="navbar-item-link" href="about.asp">About</a></li>
+          <li class="navbar-item"><input type="text" placeholder="Keyword..."><button type="button">Search</button></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="container">
+      <h1>Wraps</h1>
+      <hr>
+      <section>
+        <h2>Container</h2>
+        Container use for wrap your content
+<pre><code>&lt;div class="container"&gt;
+  Your content &lt;b&gt;here&lt;/b&gt;
+&lt;/div&gt;</code></pre>
+      </section>
+
+      <section>
+        <h2>Girds</h2>
+        Girds use for layout your content any size of browser
+        <div class="row mb-2">
+          <div class="col-12 col-lg-12 bg-green color-light p-2">A / B</div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-1 col-lg-11 bg-red color-light p-2">A</div>
+          <div class="col-11 col-lg-1 bg-blue color-light p-2">B</div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-2 col-lg-10 bg-red color-light p-2">A</div>
+          <div class="col-10 col-lg-2 bg-blue color-light p-2">B</div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-3 col-lg-9 bg-red color-light p-2">A</div>
+          <div class="col-9 col-lg-3 bg-blue color-light p-2">B</div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-4 col-lg-8 bg-red color-light p-2">A</div>
+          <div class="col-8 col-lg-4 bg-blue color-light p-2">B</div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-5 col-lg-7 bg-red color-light p-2">A</div>
+          <div class="col-7 col-lg-5 bg-blue color-light p-2">B</div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-6 col-lg-6 bg-red color-light p-2">A</div>
+          <div class="col-6 col-lg-6 bg-blue color-light p-2">B</div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-7 col-lg-5 bg-red color-light p-2">A</div>
+          <div class="col-5 col-lg-7 bg-blue color-light p-2">B</div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-8 col-lg-4 bg-red color-light p-2">A</div>
+          <div class="col-4 col-lg-8 bg-blue color-light p-2">B</div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-9 col-lg-3 bg-red color-light p-2">A</div>
+          <div class="col-3 col-lg-9 bg-blue color-light p-2">B</div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-10 col-lg-2 bg-red color-light p-2">A</div>
+          <div class="col-2 col-lg-10 bg-blue color-light p-2">B</div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-11 col-lg-1 bg-red color-light p-2">A</div>
+          <div class="col-1 col-lg-11 bg-blue color-light p-2">B</div>
+        </div>
+<pre><code>&lt;div class="row mb-2"&gt;
+  &lt;div class="col-12 col-lg-12 bg-green color-light p-2"&gt;A / B&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="row mb-2"&gt;
+  &lt;div class="col-1 col-lg-11 bg-red color-light p-2"&gt;A&lt;/div&gt;
+  &lt;div class="col-11 col-lg-1 bg-blue color-light p-2"&gt;B&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="row mb-2"&gt;
+  &lt;div class="col-2 col-lg-10 bg-red color-light p-2"&gt;A&lt;/div&gt;
+  &lt;div class="col-10 col-lg-2 bg-blue color-light p-2"&gt;B&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="row mb-2"&gt;
+  &lt;div class="col-3 col-lg-9 bg-red color-light p-2"&gt;A&lt;/div&gt;
+  &lt;div class="col-9 col-lg-3 bg-blue color-light p-2"&gt;B&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="row mb-2"&gt;
+  &lt;div class="col-4 col-lg-8 bg-red color-light p-2"&gt;A&lt;/div&gt;
+  &lt;div class="col-8 col-lg-4 bg-blue color-light p-2"&gt;B&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="row mb-2"&gt;
+  &lt;div class="col-5 col-lg-7 bg-red color-light p-2"&gt;A&lt;/div&gt;
+  &lt;div class="col-7 col-lg-5 bg-blue color-light p-2"&gt;B&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="row mb-2"&gt;
+  &lt;div class="col-6 col-lg-6 bg-red color-light p-2"&gt;A&lt;/div&gt;
+  &lt;div class="col-6 col-lg-6 bg-blue color-light p-2"&gt;B&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="row mb-2"&gt;
+  &lt;div class="col-7 col-lg-5 bg-red color-light p-2"&gt;A&lt;/div&gt;
+  &lt;div class="col-5 col-lg-7 bg-blue color-light p-2"&gt;B&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="row mb-2"&gt;
+  &lt;div class="col-8 col-lg-4 bg-red color-light p-2"&gt;A&lt;/div&gt;
+  &lt;div class="col-4 col-lg-8 bg-blue color-light p-2"&gt;B&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="row mb-2"&gt;
+  &lt;div class="col-9 col-lg-3 bg-red color-light p-2"&gt;A&lt;/div&gt;
+  &lt;div class="col-3 col-lg-9 bg-blue color-light p-2"&gt;B&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="row mb-2"&gt;
+  &lt;div class="col-10 col-lg-2 bg-red color-light p-2"&gt;A&lt;/div&gt;
+  &lt;div class="col-2 col-lg-10 bg-blue color-light p-2"&gt;B&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="row mb-2"&gt;
+  &lt;div class="col-11 col-lg-1 bg-red color-light p-2"&gt;A&lt;/div&gt;
+  &lt;div class="col-1 col-lg-11 bg-blue color-light p-2"&gt;B&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </section>
+
+      <section>
+          <h2>HTML Elements</h2>
+          Text style, Text Size And Text Weight
+          <div>
+            <h1>Heading 1</h1>
+            <h2>Heading 1</h2>
+            <h3>Heading 1</h3>
+            <h4>Heading 1</h4>
+            <h5>Heading 1</h5>
+            <h6>Heading 1</h6>
+            <div class="mb-2">
+              <a href="javascript:void(0);">Link</a>
+            </div>
+            <div class="mb-2">
+              <button type="button">Button</button>
+              <button type="button" class="button-blue">Button Blue</button>
+            </div>
+            <div class="mb-2">
+              <input type="submit" value="Button">
+              <input type="submit" class="button-blue" value="Button Blue">
+            </div>
+            <div class="mb-2">
+              <a href="javascript:void(0)" class="button">Button</a>
+              <a href="javascript:void(0)" class="button button-blue">Button Blue</a>
+            </div>
+            <div class="mb-2">
+              <input type="text" placeholder="Text">
+            </div>
+            <div class="mb-2">
+              <input type="email" placeholder="Email">
+            </div>
+            <div class="mb-2">
+              <input type="number" placeholder="Number">
+            </div>
+            <div class="mb-2">
+              <input type="search" placeholder="Search">
+            </div>
+            <div class="mb-2">
+              <input type="tel" placeholder="Tel">
+            </div>
+            <div class="mb-2">
+              <input type="url" placeholder="Url">
+            </div>
+            <div class="mb-2">
+              <input type="Password" placeholder="Password">
+            </div>
+            <div class="mb-2">
+              <textarea placeholder="Text Area"></textarea>
+            </div>
+            <div class="mb-2">
+              <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+            <div class="mb-2">
+              <label>
+                Label
+                <div class="label-body">
+                  Label Body
+                </div>
+              </label>
+            </div>
+            <div class="mb-2">
+              <legend>Legend</legend>
+            </div>
+            <div class="mb-2">
+              <fieldset>Fieldset</fieldset>
+            </div>
+            <div class="mb-2">
+              <input type="checkbox">
+            </div>
+
+            <div class="mb-2">
+              <input type="radio">
+            </div>
+
+            <hr>
+          </div>
+  <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 1&lt;/h2&gt;
+&lt;h3&gt;Heading 1&lt;/h3&gt;
+&lt;h4&gt;Heading 1&lt;/h4&gt;
+&lt;h5&gt;Heading 1&lt;/h5&gt;
+&lt;h6&gt;Heading 1&lt;/h6&gt;
+&lt;div&gt;
+  &lt;a href="javascript:void(0);"&gt;Link&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+<div>
+    <i><b>javascript:void(0)</b> you can eliminate the unwanted side-effect, because it will return the undefined primative value. (<a target="_blank" href="https://www.quackit.com/javascript/tutorial/javascript_void_0.cfm">Source</a>)</i>
+</div>
+        </section>
+
+        <section>
+          <h2>Lists</h2>
+          For Lists
+          <div>
+            <ul>
+              <li>A</li>
+              <li>B</li>
+              <li>C</li>
+            </ul>
+
+            <ol>
+              <li>A</li>
+              <li>B</li>
+              <li>C</li>
+            </ol>
+          </div>
+  <pre><code>&lt;div class="container"&gt;
+    Your content &lt;b&gt;here&lt;/b&gt;
+  &lt;/div&gt;</code></pre>
+        </section>
+
+        <section>
+          <h2>Colors</h2>
+          For Color
+          <div>
+            <p class="color-red">Red</p>
+            <p class="color-blue">Blue</p>
+            <p class="color-green">Green</p>
+            <p class="color-orange">Orange</p>
+            <p class="color-light bg-dark">Light</p>
+            <p class="color-dark">Dark</p>
+
+            <p class="bg-red color-light">Red</p>
+            <p class="bg-blue color-light">Blue</p>
+            <p class="bg-green color-light">Green</p>
+            <p class="bg-orange color-light">Orange</p>
+            <p class="color-dark">Light</p>
+            <p class="bg-dark color-light">Dark</p>
+          </div>
+  <pre><code>&lt;div class="container"&gt;
+    Your content &lt;b&gt;here&lt;/b&gt;
+  &lt;/div&gt;</code></pre>
+        </section>
+
+        <section>
+          <h2>Utilities</h2>
+          For Color
+          <table>
+            <thead>
+              <tr>
+                <th>Class Name</th>
+                <th>Style</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>p-0</td>
+                <td>padding: 0;</td>
+              </tr>
+              <tr>
+                <td>p-1</td>
+                <td>padding: 0.25rem;</td>
+              </tr>
+              <tr>
+                <td>p-2</td>
+                <td>padding: 0.25rem;</td>
+              </tr>
+            </tbody>
+
+
+          </table>
+  <pre><code>&lt;div class="container"&gt;
+    Your content &lt;b&gt;here&lt;/b&gt;
+  &lt;/div&gt;</code></pre>
+        </section>
+
+        <section>
+          <h2>Tables</h2>
+          For Tables
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Score</th>
+                </tr>
+                <tbody>
+                  <tr>
+                    <td>A</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>B</td>
+                    <td>90</td>
+                  </tr>
+                  <tr>
+                    <td>C</td>
+                    <td>20</td>
+                  </tr>
+                </tbody>
+              </thead>
+            </table>
+          </div>
+  <pre><code>&lt;div class="container"&gt;
+    Your content &lt;b&gt;here&lt;/b&gt;
+  &lt;/div&gt;</code></pre>
+        </section>
+
+
+    <section>
+      <h2>Navbar</h2>
+      For Navbar
+
+      <h4>Navbar Light</h4>
+      <hr>
+      <div class="navbar navbar-light">
+        <div class="container">
+          <button class="navbar-menu-button" data-target="navbar-menu-content-demo1">
+            <span class="navbar-menu-bar top"></span>
+            <span class="navbar-menu-bar mid"></span>
+            <span class="navbar-menu-bar bot"></span>
+          </button>
+
+          <div class="navbar-title">
+            <h1 class="color-red">Mafura</h1>
+          </div>
+          <ul class="navbar-menu navbar-sm-hide" id="navbar-menu-content-demo1">
+            <li class="navbar-item"><a class="navbar-item-link" href="#">Home</a></li>
+            <li class="navbar-item"><a class="navbar-item-link" href="#">News</a></li>
+            <li class="navbar-item"><a class="navbar-item-link disabled" href="#">Contact</a></li>
+            <li class="navbar-item"><a class="navbar-item-link" href="#">About</a></li>
+            <li class="navbar-item"><input type="text" placeholder="Keyword..."><button type="button">Search</button></li>
+          </ul>
+        </div>
+      </div>
+
+<pre><code>&#x3C;nav class=&#x22;navbar navbar-light&#x22;&#x3E;
+      &#x3C;div class=&#x22;container&#x22;&#x3E;
+        &#x3C;button class=&#x22;navbar-menu-button&#x22; data-target=&#x22;navbar-menu-content-demo1&#x22;&#x3E;
+          &#x3C;span class=&#x22;navbar-menu-bar top&#x22;&#x3E;&#x3C;/span&#x3E;
+          &#x3C;span class=&#x22;navbar-menu-bar mid&#x22;&#x3E;&#x3C;/span&#x3E;
+          &#x3C;span class=&#x22;navbar-menu-bar bot&#x22;&#x3E;&#x3C;/span&#x3E;
+        &#x3C;/button&#x3E;
+
+        &#x3C;div class=&#x22;navbar-title&#x22;&#x3E;
+          &#x3C;h1 class=&#x22;color-red&#x22;&#x3E;Mafura&#x3C;/h1&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;ul class=&#x22;navbar-menu navbar-sm-hide&#x22; id=&#x22;navbar-menu-content-demo1&#x22;&#x3E;
+          &#x3C;li class=&#x22;navbar-item&#x22;&#x3E;&#x3C;a class=&#x22;navbar-item-link&#x22; href=&#x22;#&#x22;&#x3E;Home&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+          &#x3C;li class=&#x22;navbar-item&#x22;&#x3E;&#x3C;a class=&#x22;navbar-item-link&#x22; href=&#x22;#&#x22;&#x3E;News&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+          &#x3C;li class=&#x22;navbar-item&#x22;&#x3E;&#x3C;a class=&#x22;navbar-item-link disabled&#x22; href=&#x22;#&#x22;&#x3E;Contact&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+          &#x3C;li class=&#x22;navbar-item&#x22;&#x3E;&#x3C;a class=&#x22;navbar-item-link&#x22; href=&#x22;#&#x22;&#x3E;About&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+          &#x3C;li class=&#x22;navbar-item&#x22;&#x3E;
+            &#x3C;input type=&#x22;text&#x22; placeholder=&#x22;Keyword...&#x22;&#x3E;
+            &#x3C;button type=&#x22;button&#x22;&#x3E;Search&#x3C;/button&#x3E;
+          &#x3C;/li&#x3E;
+        &#x3C;/ul&#x3E;
+      &#x3C;/div&#x3E;
+&#x3C;/nav&#x3E;</code></pre>
+
+<h4>Navbar Dark</h4>
+<hr>
+<div class="navbar navbar-dark">
+  <div class="container">
+    <button class="navbar-menu-button" data-target="navbar-menu-content-demo2">
+      <span class="navbar-menu-bar top"></span>
+      <span class="navbar-menu-bar mid"></span>
+      <span class="navbar-menu-bar bot"></span>
+    </button>
+
+    <div class="navbar-title">
+      <h1 class="color-red">Mafura</h1>
+    </div>
+    <ul class="navbar-menu navbar-sm-hide" id="navbar-menu-content-demo2">
+      <li class="navbar-item"><a class="navbar-item-link" href="#">Home</a></li>
+      <li class="navbar-item"><a class="navbar-item-link" href="#">News</a></li>
+      <li class="navbar-item"><a class="navbar-item-link disabled" href="#">Contact</a></li>
+      <li class="navbar-item"><a class="navbar-item-link" href="#">About</a></li>
+      <li class="navbar-item"><input type="text" placeholder="Keyword..."><button type="button">Search</button></li>
+    </ul>
+  </div>
+</div>
+
+<pre><code>&#x3C;nav class=&#x22;navbar navbar-dark&#x22;&#x3E;
+&#x3C;div class=&#x22;container&#x22;&#x3E;
+  &#x3C;button class=&#x22;navbar-menu-button&#x22; data-target=&#x22;navbar-menu-content-demo2&#x22;&#x3E;
+    &#x3C;span class=&#x22;navbar-menu-bar top&#x22;&#x3E;&#x3C;/span&#x3E;
+    &#x3C;span class=&#x22;navbar-menu-bar mid&#x22;&#x3E;&#x3C;/span&#x3E;
+    &#x3C;span class=&#x22;navbar-menu-bar bot&#x22;&#x3E;&#x3C;/span&#x3E;
+  &#x3C;/button&#x3E;
+
+  &#x3C;div class=&#x22;navbar-title&#x22;&#x3E;
+    &#x3C;h1 class=&#x22;color-red&#x22;&#x3E;Mafura&#x3C;/h1&#x3E;
+  &#x3C;/div&#x3E;
+  &#x3C;ul class=&#x22;navbar-menu navbar-sm-hide&#x22; id=&#x22;navbar-menu-content-demo2&#x22;&#x3E;
+    &#x3C;li class=&#x22;navbar-item&#x22;&#x3E;&#x3C;a class=&#x22;navbar-item-link&#x22; href=&#x22;#&#x22;&#x3E;Home&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;navbar-item&#x22;&#x3E;&#x3C;a class=&#x22;navbar-item-link&#x22; href=&#x22;#&#x22;&#x3E;News&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;navbar-item&#x22;&#x3E;&#x3C;a class=&#x22;navbar-item-link disabled&#x22; href=&#x22;#&#x22;&#x3E;Contact&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;navbar-item&#x22;&#x3E;&#x3C;a class=&#x22;navbar-item-link&#x22; href=&#x22;#&#x22;&#x3E;About&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;navbar-item&#x22;&#x3E;
+      &#x3C;input type=&#x22;text&#x22; placeholder=&#x22;Keyword...&#x22;&#x3E;
+      &#x3C;button type=&#x22;button&#x22;&#x3E;Search&#x3C;/button&#x3E;
+    &#x3C;/li&#x3E;
+  &#x3C;/ul&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;/nav&#x3E;</code></pre>
+
+<h4>Navbar Options</h4>
+<hr>
+<h5>Remove Container</h5>
+U can remove the container
+<div class="navbar navbar-light">
+    <button class="navbar-menu-button" data-target="navbar-menu-content-demo1">
+      <span class="navbar-menu-bar top"></span>
+      <span class="navbar-menu-bar mid"></span>
+      <span class="navbar-menu-bar bot"></span>
+    </button>
+
+    <div class="navbar-title">
+      <h1 class="color-red">Mafura</h1>
+    </div>
+    <ul class="navbar-menu navbar-sm-hide" id="navbar-menu-content-demo1">
+      <li class="navbar-item"><a class="navbar-item-link" href="#">Home</a></li>
+      <li class="navbar-item"><a class="navbar-item-link" href="#">News</a></li>
+      <li class="navbar-item"><a class="navbar-item-link disabled" href="#">Contact</a></li>
+      <li class="navbar-item"><a class="navbar-item-link" href="#">About</a></li>
+      <li class="navbar-item"><input type="text" placeholder="Keyword..."><button type="button">Search</button></li>
+    </ul>
+</div>
+<pre><code>&#x3C;nav class=&#x22;navbar navbar-light&#x22;&#x3E;
+        &#x3C;button class=&#x22;navbar-menu-button&#x22; data-target=&#x22;navbar-menu-content-demo1&#x22;&#x3E;
+          &#x3C;span class=&#x22;navbar-menu-bar top&#x22;&#x3E;&#x3C;/span&#x3E;
+          &#x3C;span class=&#x22;navbar-menu-bar mid&#x22;&#x3E;&#x3C;/span&#x3E;
+          &#x3C;span class=&#x22;navbar-menu-bar bot&#x22;&#x3E;&#x3C;/span&#x3E;
+        &#x3C;/button&#x3E;
+
+        &#x3C;div class=&#x22;navbar-title&#x22;&#x3E;
+          &#x3C;h1 class=&#x22;color-red&#x22;&#x3E;Mafura&#x3C;/h1&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;ul class=&#x22;navbar-menu navbar-sm-hide&#x22; id=&#x22;navbar-menu-content-demo1&#x22;&#x3E;
+          &#x3C;li class=&#x22;navbar-item&#x22;&#x3E;&#x3C;a class=&#x22;navbar-item-link&#x22; href=&#x22;#&#x22;&#x3E;Home&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+          &#x3C;li class=&#x22;navbar-item&#x22;&#x3E;&#x3C;a class=&#x22;navbar-item-link&#x22; href=&#x22;#&#x22;&#x3E;News&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+          &#x3C;li class=&#x22;navbar-item&#x22;&#x3E;&#x3C;a class=&#x22;navbar-item-link disabled&#x22; href=&#x22;#&#x22;&#x3E;Contact&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+          &#x3C;li class=&#x22;navbar-item&#x22;&#x3E;&#x3C;a class=&#x22;navbar-item-link&#x22; href=&#x22;#&#x22;&#x3E;About&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+          &#x3C;li class=&#x22;navbar-item&#x22;&#x3E;
+            &#x3C;input type=&#x22;text&#x22; placeholder=&#x22;Keyword...&#x22;&#x3E;
+            &#x3C;button type=&#x22;button&#x22;&#x3E;Search&#x3C;/button&#x3E;
+          &#x3C;/li&#x3E;
+        &#x3C;/ul&#x3E;
+&#x3C;/nav&#x3E;</code></pre>
+<h5>Position Fixed Top</h5>
+  <pre><code>&#x3C;nav class=&#x22;navbar navbar-light navbar-fixed&#x22;&#x3E;
+    &#x3C;!-- Your code here --&#x3E;
+&#x3C;/nav&#x3E;</code></pre>
+
+  <p>Remember to added space the top.</p>
+
+  <h5>Position Fixed Bottom</h5>
+    <pre><code>&#x3C;nav class=&#x22;navbar navbar-light navbar-fixed bot-0&#x22;&#x3E;
+      &#x3C;!-- Your code here --&#x3E;
+  &#x3C;/nav&#x3E;</code></pre>
+
+    <p>Remember to added space the top.</p>
+<h5>Position Sticky</h5>
+<pre><code>&#x3C;nav class=&#x22;navbar navbar-light navbar-sticky&#x22;&#x3E;
+    &#x3C;!-- Your code here --&#x3E;
+&#x3C;/nav&#x3E;</code></pre>
+    </section>
+
+</div>
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
+    <script src="mafura.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
