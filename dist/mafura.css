@@ -40,6 +40,30 @@ body {
   color: black;
 }
 
+/* Badge */
+.badge
+{
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  color: white;
+}
+
+
+a.badge:active,
+a.badge:hover
+{
+  opacity: 0.6;
+  color: white;
+  text-decoration: none;
+}
+
 /* Note */
 .note
 {
