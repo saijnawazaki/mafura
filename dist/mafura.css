@@ -144,7 +144,8 @@ a.badge:hover
   margin: 0;
   padding: 0;
   display: block;
-  vertical-align: super;
+  vertical-align: top;
+  line-height: 50px;
 }
 
 .navbar-sm-show
@@ -161,7 +162,6 @@ a.badge:hover
 .navbar-menu-button-x
 {
   position: absolute;
-  top: 6px;
   right: 10px;
   height: 48px;
   width: 48px;
@@ -184,6 +184,8 @@ a.badge:hover
 
 .navbar.navbar-dark > .container > .navbar-menu-button > .navbar-menu-bar,
 .navbar.navbar-dark > .container > .navbar-menu-button-x > .navbar-menu-bar,
+.navbar.navbar-dark > .container-fluid > .navbar-menu-button > .navbar-menu-bar,
+.navbar.navbar-dark > .container-fluid > .navbar-menu-button-x > .navbar-menu-bar,
 .navbar.navbar-dark > .navbar-menu-button > .navbar-menu-bar,
 .navbar.navbar-dark > .navbar-menu-button-x > .navbar-menu-bar
 {
@@ -192,6 +194,8 @@ a.badge:hover
 
 .navbar.navbar-light > .container > .navbar-menu-button > .navbar-menu-bar,
 .navbar.navbar-light > .container > .navbar-menu-button-x > .navbar-menu-bar,
+.navbar.navbar-light > .container-fluid > .navbar-menu-button > .navbar-menu-bar,
+.navbar.navbar-light > .container-fluid > .navbar-menu-button-x > .navbar-menu-bar,
 .navbar.navbar-light > .navbar-menu-button > .navbar-menu-bar,
 .navbar.navbar-light > .navbar-menu-button-x > .navbar-menu-bar
 {
@@ -273,18 +277,21 @@ a.badge:hover
 }
 
 .navbar.navbar-light > .container > .navbar-menu.navbar-sm-hide > .navbar-item > .navbar-item-link.disabled,
+.navbar.navbar-light > .container-fluid > .navbar-menu.navbar-sm-hide > .navbar-item > .navbar-item-link.disabled,
 .navbar.navbar-light > .navbar-menu.navbar-sm-hide > .navbar-item > .navbar-item-link.disabled
 {
   color: rgba(0,0,0,.3);
 }
 
 .navbar.navbar-dark > .container > .navbar-menu.navbar-sm-hide > .navbar-item > .navbar-item-link.disabled,
+.navbar.navbar-dark > .container-fluid > .navbar-menu.navbar-sm-hide > .navbar-item > .navbar-item-link.disabled,
 .navbar.navbar-dark > .navbar-menu.navbar-sm-hide > .navbar-item > .navbar-item-link.disabled
 {
   color: rgba(255,255,255,.3);
 }
 
 .navbar.navbar-dark > .container > .navbar-menu.navbar-sm-hide > .navbar-item > button,
+.navbar.navbar-dark > .container-fluid > .navbar-menu.navbar-sm-hide > .navbar-item > button,
 .navbar.navbar-dark > .navbar-menu.navbar-sm-hide > .navbar-item > button
 {
   color: white;
@@ -1032,7 +1039,7 @@ pre > code {
   .container-fluid
   {
     width: 100%;
-    padding: 1em;
+    padding: 0 1em;
   }
 
   [class*="col-"] {
