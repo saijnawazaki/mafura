@@ -4,11 +4,6 @@
 
 window.onload = function(){
 
-  if(window.pageYOffset == 0)
-  {
-      document.getElementById('navbar').className = document.getElementById('navbar').className.replace(/\bnavbar-dark\b/g, "navbar-transparent");
-  }
-
   var navbarMenuButton = document.getElementsByClassName('navbar-menu-button');
 
   function toggleNavbarMenuButton(there)
@@ -55,20 +50,11 @@ window.onload = function(){
   window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
 
-    if(currentScrollPos == 0)
-    {
-        document.getElementById('navbar').className = document.getElementById('navbar').className.replace(/\bnavbar-dark\b/g, "navbar-transparent");
-    }
-    else
-    {
-        document.getElementById('navbar').className = document.getElementById('navbar').className.replace(/\bnavbar-transparent\b/g, "navbar-dark");
-    }
-
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("button_back_to_top").style.bottom = "-100px";
 
     } else {
-      document.getElementById("button_back_to_top").style.bottom = "20px";
+      document.getElementById("button_back_to_top").style.bottom = "100px";
     }
     prevScrollpos = currentScrollPos;
   }

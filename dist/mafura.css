@@ -16,6 +16,61 @@
   --color-gray: #6c757d;
 }
 
+.card {
+  position: relative;
+  display: block;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #f1f1f1;
+  border-radius: .25rem;
+  background-color: #f1f1f1;
+  transition: all 200ms ease-out;
+}
+
+.card a {
+  text-decoration: none !important;
+}
+
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+}
+
+.card-img-left {
+  width: 120px;
+  float: left;
+  margin-right: 1rem;
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-title {
+    margin-bottom: .75rem;
+}
+
+.card-text {
+  color: var(--color-dark);
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
 /* Main */
 *,
 *::before,
@@ -114,6 +169,16 @@ a.badge:hover
   margin-bottom: 0;
 }
 
+.navbar-fixed-right
+{
+  position: fixed;
+  height: auto;
+  bottom: 0;
+  width: 100%;
+  z-index: 1020;
+  margin-bottom: 0;
+}
+
 .bot-0
 {
   bottom: 0;
@@ -157,11 +222,22 @@ a.badge:hover
 
 .navbar-title {
   display: inline-block;
-  margin-right: 1rem;
+  margin-right: 0.6rem;
+  margin-left: 0.6rem;
   font-size: 1.25rem;
   line-height: inherit;
   var(--color-light)-space: nowrap;
   padding-top: 0.3rem;
+}
+
+.content-navbar-left-added
+{
+  margin-left: 0rem !important;
+}
+
+.footer-navbar-left-added
+{
+  margin-bottom: 6rem !important;
 }
 
 .navbar-menu {
@@ -169,6 +245,17 @@ a.badge:hover
   margin: 0;
   padding: 0;
   display: block;
+  vertical-align: top;
+  line-height: 50px;
+  transition: all 200ms linear 0ms;
+  overflow: hidden;
+}
+
+.navbar-menu-left {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
   vertical-align: top;
   line-height: 50px;
   transition: all 200ms linear 0ms;
@@ -1032,6 +1119,13 @@ pre > code {
 }
 
 
+
+.navbar-item-left
+{
+  display: inline !important;
+  margin-right: 1rem;
+}
+
 @media (min-width: 400px) {
   .container,
   .container-fluid {
@@ -1040,6 +1134,36 @@ pre > code {
 }
 
 @media (min-width: 550px) {
+
+  .navbar-menu-left {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    vertical-align: top;
+    line-height: 50px;
+    transition: all 200ms linear 0ms;
+    overflow: hidden;
+  }
+
+  .content-navbar-left-added
+  {
+    margin-left: 10rem !important;
+  }
+
+  .footer-navbar-left-added
+  {
+    margin-bottom: 0rem !important;
+  }
+
+  .navbar-fixed-right
+  {
+    position: fixed;
+    height: 100vh;
+    z-index: 1020;
+    margin-bottom: 0;
+    width: auto;
+  }
 
   .navbar-sm-show,
   .navbar-sm-hide
@@ -1055,9 +1179,13 @@ pre > code {
 
   .navbar-item
   {
-    display: inline;
+    display: inline !important;
   }
 
+  .navbar-item-left
+  {
+    display: block !important;
+  }
 
   .container {
     width: 80%;
