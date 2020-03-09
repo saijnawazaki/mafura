@@ -62,16 +62,8 @@
   transition: var(--transition-speed);
 }
 
-.logo {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  text-align: center;
-  color: var(--text-secondary);
+.nav-header {
   background: var(--bg-secondary);
-  font-size: 1.5rem;
-  letter-spacing: 0.3ch;
-  width: 100%;
 }
 
 .logo svg {
@@ -79,16 +71,29 @@
   transition: var(--transition-speed);
 }
 
-.logo-text
+.logo-large
 {
   display: inline;
   position: absolute;
-  left: -999px;
+  left: 1.5rem;
+  opacity: 0;
   transition: var(--transition-speed);
 }
 
-.navbar:hover .logo svg {
-  transform: rotate(-180deg);
+.navbar:hover .logo-small {
+  opacity: 0;
+}
+
+.navbar:hover .logo-large {
+  left: 1.5rem;
+  opacity: 1;
+}
+
+.logo-small {
+  height: 50px;
+  opacity: 1;
+  transition: var(--transition-speed);
+  margin-left: 1rem;
 }
 
 
@@ -105,9 +110,6 @@
     height: 5rem;
   }
 
-  .logo {
-    display: none;
-  }
 
   .navbar-nav {
     flex-direction: row;
@@ -126,6 +128,14 @@
     margin-left: auto !important;
   }
 
+  .navbar:hover .logo-small {
+    opacity: 1;
+  }
+
+  .navbar:hover .logo-large {
+    left: -999px;
+  }
+
 }
 
 /* Large screens */
@@ -137,7 +147,9 @@
   }
 
   .navbar:hover {
-    width: 16rem;
+    width: 10rem;
+    border-right: 3px solid #010101;
+    box-shadow: 4px 0 10px -3px #010101;
   }
 
   .navbar:hover .link-text {

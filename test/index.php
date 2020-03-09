@@ -11,6 +11,9 @@
     <?php
     include ('path/header.php');
     ?>
+    <div style="background-image:url(https://repo.manastudio.id/manastudio/artwork/rekiyagami_girl_sky.jpg); height: 260px; background-position: bottom; background-size:cover">
+    
+    </div>
     <div class="container-fluid">
         <h1>Hello, world!</h1>
     </div>
