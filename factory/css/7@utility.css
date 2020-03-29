@@ -1,0 +1,17 @@
+.bg-light {
+  background-color: #f8f9fa!important;
+}
+
+.color-muted {
+  color: #6c757d!important;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  text-decoration: underline;
+}

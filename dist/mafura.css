@@ -1,7 +1,7 @@
 /*
 * Mafura-Red
 * saijnawazaki
-* Generated At: Mon, 09 Mar 2020 19:19:17 +0100
+* Generated At: Sun, 29 Mar 2020 21:08:10 +0200
 */
 
 :root {
@@ -10,6 +10,12 @@
   --bg-primary: #23232e;
   --bg-secondary: #141418;
   --transition-speed: 600ms;
+
+  --bg-dark: #23232e;
+  --text-light: white;
+
+  --color-primary: #00b4ea;
+  --color-secondary: #b0ddde;
 }
 
 
@@ -4084,6 +4090,7 @@ template {
   position: fixed;
   background-color: var(--bg-primary);
   transition: width 600ms ease;
+  z-index: 1030;
 }
 
 .navbar-nav {
@@ -4110,12 +4117,11 @@ template {
   height: 5rem;
   color: var(--text-primary);
   text-decoration: none;
-  filter: grayscale(100%) opacity(0.7);
   transition: var(--transition-speed);
+  text-decoration: none !important;
 }
 
 .nav-link:hover {
-  filter: grayscale(0%) opacity(1);
   background: var(--bg-secondary);
   color: var(--text-secondary);
 }
@@ -4247,4 +4253,129 @@ template {
   {
     left: 0px;
   }
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-cell-caption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 1.6rem;
+  margin-bottom: 1.6rem;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+/* no circle */
+.flickity-button {
+  background: transparent !important;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: white !important;
+}
+/* hide disabled button */
+.flickity-button:disabled {
+  display: none !important;
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  .flickity-prev-next-button.previous {
+    left: 6rem !important;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .carousel-cell {
+    width: 100%;
+    height: 30vh;
+  }
+}
+
+.bg-light {
+  background-color: #f8f9fa!important;
+}
+
+.color-muted {
+  color: #6c757d!important;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.content-box {
+  max-width: 370px;
+}
+
+.content-box-body {
+
+}
+.content-box-header {
+  position: relative;
+  margin: 0 auto 0.5rem;
+  border-bottom: 2px solid var(--color-secondary);
+  width: 100%;
+}
+
+
+.content-box-header-secondary {
+  color: #6c757d;
+  font-size: 12px;
+}
+
+.content-box-title {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 8px;
+  color: var(--color-primary);
+  font-weight: bold;
+  letter-spacing: .03em;
+  line-height: 1.2em;
+  margin-bottom: 0;
+  margin-top: 0
+}
+
+.content-box-more {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  letter-spacing: .05em;
+  line-height: 6em;
+  color: var(--color-primary);
+}
+
+.col-sm-12,
+.col-lg-12,
+.col-12 {
+  flex: unset !important;
+}
+
+.container {
+  width: unset !important;
 }

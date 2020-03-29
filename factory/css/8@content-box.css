@@ -1,0 +1,43 @@
+.content-box {
+  max-width: 370px;
+}
+
+.content-box-body {
+
+}
+.content-box-header {
+  position: relative;
+  margin: 0 auto 0.5rem;
+  border-bottom: 2px solid var(--color-secondary);
+  width: 100%;
+}
+
+
+.content-box-header-secondary {
+  color: #6c757d;
+  font-size: 12px;
+}
+
+.content-box-title {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 8px;
+  color: var(--color-primary);
+  font-weight: bold;
+  letter-spacing: .03em;
+  line-height: 1.2em;
+  margin-bottom: 0;
+  margin-top: 0
+}
+
+.content-box-more {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  letter-spacing: .05em;
+  line-height: 6em;
+  color: var(--color-primary);
+}
