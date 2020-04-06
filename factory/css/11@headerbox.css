@@ -1,0 +1,42 @@
+.headerbox-t {
+  padding: .75rem 1rem 0 1rem;
+  background-color: #e9ecef;
+}
+
+.headerbox-b {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  padding: .75rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #e9ecef;
+}
+
+.position-sticky-t {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.float-left {
+  float: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.headerbox-body {
+  position: relative;
+  margin: 0 auto 0.5rem;
+  width: 100%;
+}
+
+.headerbox-more {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  letter-spacing: .05em;
+  line-height: 6em;
+  color: var(--color-primary);
+}

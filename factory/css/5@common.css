@@ -4,3 +4,33 @@ hr {
   border: 0;
   border-top: 1px solid rgba(0,0,0,.1);
 }
+
+.line-t {
+  box-shadow: inset 0 2px 0px 0px var(--color-secondary);
+  position: relative;
+}
+
+.line-t-p {
+  border-top: 2px solid var(--color-primary);
+  position: relative;
+  padding-top: 0.4rem;
+}
+
+
+.thumbnail {
+  width: 162px;
+  height: 240px;
+  transition: all 600ms ease;
+}
+
+.thumbnail-s {
+  width: 68px;
+  height: 100px;
+  transition: all 600ms ease;
+}
+
+.thumbnail img,
+.thumbnail-s img {
+    max-height: 100%;
+    max-width: 100%;
+}

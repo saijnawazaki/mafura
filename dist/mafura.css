@@ -1,7 +1,7 @@
 /*
 * Mafura-Red
 * saijnawazaki
-* Generated At: Sun, 29 Mar 2020 21:08:10 +0200
+* Generated At: Sun, 05 Apr 2020 20:18:25 +0200
 */
 
 :root {
@@ -14,8 +14,9 @@
   --bg-dark: #23232e;
   --text-light: white;
 
-  --color-primary: #00b4ea;
+  --color-primary: #0091ff;
   --color-secondary: #b0ddde;
+  --color-primary-2: #00f;
 }
 
 
@@ -4124,6 +4125,7 @@ template {
 .nav-link:hover {
   background: var(--bg-secondary);
   color: var(--text-secondary);
+  border-left: 3px solid var(--color-primary);
 }
 
 .link-text {
@@ -4196,6 +4198,7 @@ template {
     bottom: 0;
     width: 100vw;
     height: 5rem;
+    overflow-x: auto;
   }
 
 
@@ -4260,6 +4263,36 @@ hr {
   margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.line-t {
+  box-shadow: inset 0 2px 0px 0px var(--color-secondary);
+  position: relative;
+}
+
+.line-t-p {
+  border-top: 2px solid var(--color-primary);
+  position: relative;
+  padding-top: 0.4rem;
+}
+
+
+.thumbnail {
+  width: 162px;
+  height: 240px;
+  transition: all 600ms ease;
+}
+
+.thumbnail-s {
+  width: 68px;
+  height: 100px;
+  transition: all 600ms ease;
+}
+
+.thumbnail img,
+.thumbnail-s img {
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .carousel-cell {
@@ -4378,4 +4411,68 @@ a:hover {
 
 .container {
   width: unset !important;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+}
+
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: .5rem;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: "/";
+}
+
+.headerbox-t {
+  padding: .75rem 1rem 0 1rem;
+  background-color: #e9ecef;
+}
+
+.headerbox-b {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  padding: .75rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #e9ecef;
+}
+
+.position-sticky-t {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.float-left {
+  float: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.headerbox-body {
+  position: relative;
+  margin: 0 auto 0.5rem;
+  width: 100%;
+}
+
+.headerbox-more {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  letter-spacing: .05em;
+  line-height: 6em;
+  color: var(--color-primary);
 }
