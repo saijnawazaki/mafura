@@ -9,6 +9,7 @@
   padding: .75rem 1rem;
   margin-bottom: 1rem;
   background-color: #e9ecef;
+  transition: all 600ms ease;
 }
 
 .position-sticky-t {

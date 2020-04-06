@@ -73,6 +73,7 @@
 
         </div>
         <div class="col-sm-12 col-lg-12">
+
           <div class="content-box-header-secondary">
             Created by saijnawazaki.
           </div>
@@ -87,6 +88,33 @@
         </div>
         <div class="col-12 col-lg-9">
           LIST
+        </div>
+        <div class="col-sm-12 col-lg-5">
+          <table>
+            <tr>
+              <th>Staff</th>
+            </tr>
+            <tr>
+              <td>
+                <div class="pin-tag">
+                  <a href="https://community.manastudio.id/profile/saijnawazaki" class="pin-tag-link" target="_blank">
+                    <img class="pin-tag-img" src="https://repo.manastudio.id/public/person/0-3-1.png" alt="Julianto Chai">
+                    <span class="pin-tag-text">Julianto Chai</span>
+                  </a>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <table>
+            <tr>
+              <th>Information</th>
+            </tr>
+            <tr>
+              <td>saijnawazaki</td>
+            </tr>
+          </table>
         </div>
       </div>
 
@@ -125,6 +153,7 @@
               document.getElementById('work_cover').classList.add('thumbnail');
               document.getElementById('work_cover').classList.remove('thumbnail-s');
               document.getElementById('work_cover_description').style.display = 'block';
+              document.getElementById('work_cover_container_header').style.fontSize = '';
 
             } else {
               document.getElementById('work_cover_container').classList.add('col-lg-1');
@@ -140,6 +169,8 @@
               document.getElementById('work_cover').classList.add('thumbnail-s');
               document.getElementById('work_cover').classList.remove('thumbnail');
               document.getElementById('work_cover_description').style.display = 'none';
+
+              document.getElementById('work_cover_container_header').style.fontSize = '12px';
 
             }
             didScroll = false;

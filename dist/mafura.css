@@ -1,7 +1,7 @@
 /*
 * Mafura-Red
 * saijnawazaki
-* Generated At: Sun, 05 Apr 2020 20:18:25 +0200
+* Generated At: $generated_at
 */
 
 :root {
@@ -4089,7 +4089,7 @@ template {
 
 .navbar {
   position: fixed;
-  background-color: var(--bg-primary);
+  background-color: #23232e;
   transition: width 600ms ease;
   z-index: 1030;
 }
@@ -4116,16 +4116,20 @@ template {
   display: flex;
   align-items: center;
   height: 5rem;
-  color: var(--text-primary);
+  color: #ffffff;
   text-decoration: none;
-  transition: var(--transition-speed);
+  transition: 600ms;
   text-decoration: none !important;
 }
 
 .nav-link:hover {
-  background: var(--bg-secondary);
-  color: var(--text-secondary);
-  border-left: 3px solid var(--color-primary);
+  background: #141418;
+  color: #ececec;
+  border-bottom: 3px solid #007bff;
+}
+
+.nav-link:active {
+  background: #007bff;
 }
 
 .link-text {
@@ -4139,26 +4143,13 @@ template {
   margin: 0 1.5rem;
 }
 
-.fa-primary {
-  color: #ff7eee;
-}
-
-.fa-secondary {
-  color: #df49a6;
-}
-
-.fa-primary,
-.fa-secondary {
-  transition: var(--transition-speed);
-}
-
 .nav-header {
-  background: var(--bg-secondary);
+  background: #141418;
 }
 
 .logo svg {
   transform: rotate(0deg);
-  transition: var(--transition-speed);
+  transition: 600ms;
 }
 
 .logo-large
@@ -4167,66 +4158,51 @@ template {
   position: absolute;
   left: 1.5rem;
   opacity: 0;
-  transition: var(--transition-speed);
-}
-
-.navbar:hover .logo-small {
-  opacity: 0;
-}
-
-.navbar:hover .logo-large {
-  left: 1.5rem;
-  opacity: 1;
+  transition: 600ms;
 }
 
 .logo-small {
   height: 50px;
   opacity: 1;
-  transition: var(--transition-speed);
+  transition: 600ms;
   margin-left: 1rem;
 }
 
 
-.container-fluid {
-  margin-left: 5rem !important;
-}
 
 
 /* Small screens */
-@media only screen and (max-width: 600px) {
-  .navbar {
-    bottom: 0;
-    width: 100vw;
-    height: 5rem;
-    overflow-x: auto;
-  }
+.navbar {
+  bottom: 0;
+  width: 100vw;
+  height: 5rem;
+  overflow-x: auto;
+}
 
 
-  .navbar-nav {
-    flex-direction: row;
-  }
+.navbar-nav {
+  flex-direction: row;
+}
 
-  .nav-link {
-    justify-content: center;
-  }
+.nav-link {
+  justify-content: center;
+}
 
-  main {
-    margin: 0;
-  }
+main {
+  margin: 0;
+}
 
 
-  .container-fluid {
-    margin-left: auto !important;
-  }
+.container-fluid {
+  margin-left: auto !important;
+}
 
-  .navbar:hover .logo-small {
-    opacity: 1;
-  }
+.navbar:hover .logo-small {
+  opacity: 1;
+}
 
-  .navbar:hover .logo-large {
-    left: -999px;
-  }
-
+.navbar:hover .logo-large {
+  left: -999px;
 }
 
 /* Large screens */
@@ -4235,12 +4211,24 @@ template {
     top: 0;
     width: 5rem;
     height: 100vh;
+    overflow-x: hidden;
   }
 
   .navbar:hover {
     width: 10rem;
     border-right: 3px solid #010101;
     box-shadow: 4px 0 10px -3px #010101;
+  }
+
+  .nav-link:hover {
+    background: #141418;
+    color: #ececec;
+    border-left: 3px solid #007bff;
+    border-bottom: 0;
+  }
+
+  .nav-link:active {
+    background: #007bff;
   }
 
   .navbar:hover .link-text {
@@ -4256,6 +4244,29 @@ template {
   {
     left: 0px;
   }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    justify-content: left;
+  }
+
+  .navbar:hover .logo-small {
+    opacity: 0;
+  }
+
+  .navbar:hover .logo-large {
+    left: 1.5rem;
+    opacity: 1;
+  }
+
+  .container-fluid,
+  .container {
+    margin-left: 5rem !important;
+  }
+
 }
 
 hr {
@@ -4276,16 +4287,15 @@ hr {
   padding-top: 0.4rem;
 }
 
-
 .thumbnail {
-  width: 162px;
-  height: 240px;
+  width: 81px;
+  height: 120px;
   transition: all 600ms ease;
 }
 
 .thumbnail-s {
-  width: 68px;
-  height: 100px;
+  width: 54px;
+  height: 80px;
   transition: all 600ms ease;
 }
 
@@ -4293,6 +4303,29 @@ hr {
 .thumbnail-s img {
     max-height: 100%;
     max-width: 100%;
+}
+
+
+
+@media (min-width: 576px) {
+  .thumbnail {
+    width: 162px;
+    height: 240px;
+    transition: all 600ms ease;
+  }
+
+  .thumbnail-s {
+    width: 54px;
+    height: 80px;
+    transition: all 600ms ease;
+  }
+
+  .thumbnail img,
+  .thumbnail-s img {
+      max-height: 100%;
+      max-width: 100%;
+  }
+
 }
 
 .carousel-cell {
@@ -4445,6 +4478,7 @@ a:hover {
   padding: .75rem 1rem;
   margin-bottom: 1rem;
   background-color: #e9ecef;
+  transition: all 600ms ease;
 }
 
 .position-sticky-t {
@@ -4475,4 +4509,65 @@ a:hover {
   letter-spacing: .05em;
   line-height: 6em;
   color: var(--color-primary);
+}
+
+.pin-tag
+{
+  background-color: #f1f1f1;
+  border-radius: 0.25rem;
+  display: inline-block;
+  position: relative;
+  border-radius: 16px;
+  padding-right: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: all 200ms ease-out;
+}
+
+.pin-tag-img
+{
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
+
+.pin-tag-text
+{
+  margin-left: 2px;
+}
+
+.pin-tag-link
+{
+  color: black;
+}
+
+.pin-tag-link:hover
+{
+  color: black;
+  text-decoration: none;
+}
+
+.pin-tag:hover
+{
+  box-shadow: 0 0 6px rgba(35, 173, 278, 1);
+}
+
+.pin-tag:active
+{
+  box-shadow: 0 0 3px 5px #007bff;
+  background-color: #007bff;
+}
+
+table {
+  width: 100%;
+  color: #212529$;
+  margin-bottom: 1rem;
+}
+
+table td,
+table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
 }
