@@ -1,0 +1,33 @@
+.navbar-side {
+  position: fixed;
+  top: 0;
+  background-color: black;
+  width: 100%;
+}
+
+.navbar-side-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar-side-item{
+  width: 100%;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+
+@media screen and (max-width: 768px) {
+  .navbar-side {
+    top: unset;
+    bottom: 0;
+  }
+
+  .navbar-side-item-text {
+    display: none;
+  }
+}

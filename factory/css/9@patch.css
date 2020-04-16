@@ -1,9 +1,0 @@
-.col-sm-12,
-.col-lg-12,
-.col-12 {
-  flex: unset !important;
-}
-
-.container {
-  width: unset !important;
-}
