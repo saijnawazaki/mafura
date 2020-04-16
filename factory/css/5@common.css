@@ -16,43 +16,22 @@ hr {
   padding-top: 0.4rem;
 }
 
-.thumbnail {
-  width: 81px;
-  height: 120px;
-  transition: all 600ms ease;
+.float-left {
+  float: left;
 }
 
-.thumbnail-s {
-  width: 54px;
-  height: 80px;
-  transition: all 600ms ease;
+.float-right {
+  float: right;
 }
 
-.thumbnail img,
-.thumbnail-s img {
-    max-height: 100%;
-    max-width: 100%;
+.text-center {
+  text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
 
-
-@media (min-width: 576px) {
-  .thumbnail {
-    width: 162px;
-    height: 240px;
-    transition: all 600ms ease;
-  }
-
-  .thumbnail-s {
-    width: 54px;
-    height: 80px;
-    transition: all 600ms ease;
-  }
-
-  .thumbnail img,
-  .thumbnail-s img {
-      max-height: 100%;
-      max-width: 100%;
-  }
-
+.text-right {
+  text-align: right;
 }

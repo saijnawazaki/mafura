@@ -1,15 +1,19 @@
-.headerbox-t {
+.headerbox {
   padding: .75rem 1rem 0 1rem;
   background-color: #e9ecef;
 }
 
-.headerbox-b {
+.b-b-r-0,
+.b-b-l-0 {
+  border-bottom-right-radius: 0;
+}
+
+.b-b-r-1 {
   border-bottom-right-radius: 0.25rem;
+}
+
+.b-b-l-1 {
   border-bottom-left-radius: 0.25rem;
-  padding: .75rem 1rem;
-  margin-bottom: 1rem;
-  background-color: #e9ecef;
-  transition: all 600ms ease;
 }
 
 .position-sticky-t {
@@ -18,9 +22,7 @@
   z-index: 1020;
 }
 
-.float-left {
-  float: left;
-}
+
 
 .text-center {
   text-align: center;

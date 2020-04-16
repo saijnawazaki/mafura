@@ -42,17 +42,8 @@
                 </a>
               </div>
             </div>
-            <div id="work_cover_description">
-              <div id="work_cover_description_text" class="textboxmore-body">
-                <p class="mt-0">
-                  原作小説の累計発行部数は、2017年4月25日の第1巻増刷発行分で国内1300万部を[4][注釈 2]、2018年8月に全世界2200万部を突破した[6]。
-                  また、第1巻は電撃文庫で史上初の国内単巻発行100万部を達成している[4]。
-                  2018年11月時点で、世界13ヶ国以上において翻訳版が展開されている[7]。また、アニメの視聴回数は累計7億回を突破、映像ソフトの売り上げは累計120万本を突破している[7]。さらに、コンシューマーゲームの売り上げは全世界累計430万本を突破、モバイルゲームは全世界で2500万ダウンロードを突破している[7]。
-                  また2017年2月公開の劇場アニメの興行収入は、国内で25億円、全世界で43億円を超えた[8]。
-                  『第12回オリコン上半期“本”ランキング 2019』ジャンル別「文庫」では、第21巻がライトノベル作品で初めて同部門の1位を獲得した[9]。さらに「ライトノベル（BOOK・文庫）」部門では、2015年から5年連続、通算6度目の同部門1位を記録した[9]。
-                </p>
-            </div>
-
+            <div class="float-right">
+              <button>DOWNLOAD</button>
             </div>
           </div>
 
@@ -91,7 +82,7 @@
         </div>
         <div class="col-sm-12 col-lg-5">
           <table>
-            <tr>
+            <tr class="text-left">
               <th>Staff</th>
             </tr>
             <tr>
@@ -108,7 +99,7 @@
         </div>
         <div class="col-sm-12 col-lg-6">
           <table>
-            <tr>
+            <tr class="text-left">
               <th>Information</th>
             </tr>
             <tr>
@@ -152,7 +143,6 @@
 
               document.getElementById('work_cover').classList.add('thumbnail');
               document.getElementById('work_cover').classList.remove('thumbnail-s');
-              document.getElementById('work_cover_description').style.display = 'block';
               document.getElementById('work_cover_container_header').style.fontSize = '';
 
             } else {
@@ -168,7 +158,6 @@
 
               document.getElementById('work_cover').classList.add('thumbnail-s');
               document.getElementById('work_cover').classList.remove('thumbnail');
-              document.getElementById('work_cover_description').style.display = 'none';
 
               document.getElementById('work_cover_container_header').style.fontSize = '12px';
 

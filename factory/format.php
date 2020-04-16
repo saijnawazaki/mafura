@@ -10,5 +10,6 @@ $format = array(
   '$color-dark$' => '#23232e',
   '$color-dark-secondary$' => '#141418',
   '$z-index-navbar$' => 1030,
+  '$z-index-navbar-top$' => 1029,
 );
 ?>
