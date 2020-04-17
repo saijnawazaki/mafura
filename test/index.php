@@ -12,7 +12,18 @@
     <?php include('path/header.php') ?>
     <div class="container">
       <h1>Hello, world!</h1>
+      <hr>
+      <?php
+        for($x = 0; $x < 100; $x++)
+        {
+          echo $x.'<br>';
+
+        }
+
+        echo 'INI BOT';
+      ?>
     </div>
+
   </body>
 
   <script src="../dist/mafura.js"></script>

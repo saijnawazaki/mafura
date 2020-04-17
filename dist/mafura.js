@@ -7,19 +7,29 @@ window.addEventListener('load', function(){
   */
   //navbar
 
+  let navbar_bar = document.getElementsByClassName("navbar-bar");
+  let navbar_side_bar = document.getElementsByClassName("navbar-side-bar");
+  let fun_scroll = document.getElementsByClassName("fun-scroll");
 
-  let elements = document.getElementsByClassName("navbar-bar");
-
-  for (var i = 0; i < elements.length; i++) {
-      //elements[i].addEventListener('click', myFunction, false);
-      let there = elements[i];
-      let data_toggle = there.getAttribute('data-toggle');
-      let aria_controls = there.getAttribute('aria-controls');
-      let aria_pressed = there.getAttribute('aria-pressed');
-
-      var function_target = window[data_toggle];
-      elements[i].addEventListener('click', function_target, false);
+  if(navbar_bar.length > 0)
+  {
+    addEventListerByElement(navbar_bar);
   }
+
+  if(navbar_side_bar.length > 0)
+  {
+    addEventListerByElement(navbar_side_bar);
+
+  }
+
+  if(fun_scroll.length > 0)
+  {
+    addEventListerByElement(fun_scroll);
+
+  }
+
+
+
 
 });
 
@@ -42,3 +52,21 @@ var collapse = function() {
 
 
 };
+
+var scroll = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+function addEventListerByElement(elements) {
+  for (var i = 0; i < elements.length; i++) {
+      //elements[i].addEventListener('click', myFunction, false);
+      console.log(elements[i]);
+      let there = elements[i];
+      let data_toggle = there.getAttribute('data-toggle');
+
+      console.log('dddd->'+data_toggle);
+
+      var function_target = window[data_toggle];
+      elements[i].addEventListener('click', function_target, false);
+  }
+}
