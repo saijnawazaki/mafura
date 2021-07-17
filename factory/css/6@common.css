@@ -1,0 +1,195 @@
+/* BOTTOM */
+^func_loop('bottom-*',array('bottom'=>'* !important'),array('0'=>'0','1'=>'1rem','2'=>'2rem','3'=>'4rem','4'=>'6rem','5'=>'12rem'));
+
+/* TOP */
+^func_loop('top-*',array('top'=>'* !important'),array('0'=>'0','1'=>'1rem','2'=>'2rem','3'=>'4rem','4'=>'6rem','5'=>'12rem'));
+
+/* LEFT */
+^func_loop('left-*',array('left'=>'* !important'),array('0'=>'0','1'=>'1rem','2'=>'2rem','3'=>'4rem','4'=>'6rem','5'=>'12rem'));
+
+/* RIGHT */
+^func_loop('right-*',array('right'=>'* !important'),array('0'=>'0','1'=>'1rem','2'=>'2rem','3'=>'4rem','4'=>'6rem','5'=>'12rem'));
+
+/* BOTTOM PERCENT */
+^func_loop('bottom-p-*',array('bottom'=>'* !important'),array('0'=>'0','1'=>'20%','2'=>'30%','3'=>'50%','4'=>'80%','5'=>'100%'));
+
+/* TOP PERCENT */
+^func_loop('top-p-*',array('top'=>'* !important'),array('0'=>'0','1'=>'20%','2'=>'30%','3'=>'50%','4'=>'80%','5'=>'100%'));
+
+/* LEFT PERCENT */
+^func_loop('left-p-*',array('left'=>'* !important'),array('0'=>'0','1'=>'20%','2'=>'30%','3'=>'50%','4'=>'80%','5'=>'100%'));
+
+/* RIGHT PERCENT */
+^func_loop('right-p-*',array('right'=>'* !important'),array('0'=>'0','1'=>'20%','2'=>'30%','3'=>'50%','4'=>'80%','5'=>'100%'));
+
+/* BORDER */
+^func_loop('border-*',array('border'=>'* solid currentcolor !important'),array('0'=>'0','1'=>'0.1rem','2'=>'0.2rem','3'=>'0.3rem','4'=>'0.4rem','5'=>'0.5rem'));
+
+/* BORDER BOTTOM */
+^func_loop('border-b-*',array('border-bottom'=>'* solid currentcolor !important'),array('0'=>'0','1'=>'0.1rem','2'=>'0.2rem','3'=>'0.3rem','4'=>'0.4rem','5'=>'0.5rem'));
+
+/* BORDER TOP */
+^func_loop('border-t-*',array('border-top'=>'* solid currentcolor !important'),array('0'=>'0','1'=>'0.1rem','2'=>'0.2rem','3'=>'0.3rem','4'=>'0.4rem','5'=>'0.5rem'));
+
+/* BORDER LEFT */
+^func_loop('border-l-*',array('border-left'=>'* solid currentcolor !important'),array('0'=>'0','1'=>'0.1rem','2'=>'0.2rem','3'=>'0.3rem','4'=>'0.4rem','5'=>'0.5rem'));
+
+/* BORDER RIGHT */
+^func_loop('border-r-*',array('border-right'=>'* solid currentcolor !important'),array('0'=>'0','1'=>'0.1rem','2'=>'0.2rem','3'=>'0.3rem','4'=>'0.4rem','5'=>'0.5rem'));
+
+
+/* LINE HEIGHT */
+.lh-1 {
+  line-height: 1;
+}
+
+/* WIDTH PERCENT */
+^func_loop('width-p-*',array('width'=>'* !important'),array('0'=>'0','1'=>'20%','2'=>'30%','3'=>'50%','4'=>'80%','5'=>'100%'));
+
+.width-fluid {
+  width: 100%;
+}
+
+/* OPACITY */
+^func_loop('opacity-*',array('opacity'=>'* !important'),array('0'=>'0','1'=>'0.2','2'=>'0.4','3'=>'0.6','4'=>'0.8','5'=>'1','full'=>'1'));
+
+/* BORDER RADIUS */
+^func_loop('br-*',array('border-radius'=>'* !important'),array('0'=>'0','1'=>'0.2rem','2'=>'0.4rem','3'=>'0.8rem','4'=>'1.6rem','5'=>'3.2rem'));
+
+/* BORDER RADIUS TOP LEFT */
+^func_loop('br-t-l-*',array('border-top-left-radius'=>'* !important'),array('0'=>'0','1'=>'0.2rem','2'=>'0.4rem','3'=>'0.8rem','4'=>'1.6rem','5'=>'3.2rem'));
+
+/* BORDER RADIUS BOTTOM LEFT */
+^func_loop('br-b-l-*',array('border-bottom-left-radius'=>'* !important'),array('0'=>'0','1'=>'0.2rem','2'=>'0.4rem','3'=>'0.8rem','4'=>'1.6rem','5'=>'3.2rem'));
+
+/* BORDER RADIUS TOP RIGHT */
+^func_loop('br-t-r-*',array('border-top-right-radius'=>'* !important'),array('0'=>'0','1'=>'0.2rem','2'=>'0.4rem','3'=>'0.8rem','4'=>'1.6rem','5'=>'3.2rem'));
+
+/* BORDER RADIUS BOTTOM RIGHT */
+^func_loop('br-b-r-*',array('border-bottom-right-radius'=>'* !important'),array('0'=>'0','1'=>'0.2rem','2'=>'0.4rem','3'=>'0.8rem','4'=>'1.6rem','5'=>'3.2rem'));
+
+/* WIDTH */
+^func_loop('width-*',array('width'=>'* !important'),array('0'=>'0','1'=>'2rem','2'=>'4rem','3'=>'8rem','4'=>'16rem','5'=>'32rem'));
+
+/* HEIGHT */
+^func_loop('height-*',array('height'=>'* !important'),array('0'=>'0','1'=>'2rem','2'=>'4rem','3'=>'8rem','4'=>'16rem','5'=>'32rem'));
+
+/* HEIGHT */
+^func_loop('min-height-*',array('min-height'=>'* !important'),array('0'=>'0','1'=>'2rem','2'=>'4rem','3'=>'8rem','4'=>'16rem','5'=>'32rem'));
+
+.br-pill {
+  border-radius: 10rem !important;
+}
+
+.hover:hover {
+  background-color: $color-light-darken !important;
+  color: $color-black !important;
+}
+
+.vertical-align-text-bottom {
+  vertical-align: text-bottom;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.width-s-panel {
+  width: 400px;
+}
+
+.height-vh {
+  height: 100vh;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.br-round {
+  border-radius: 50% !important;
+}
+
+.link-no-underline {
+  text-decoration: none;
+}
+
+.link-no-underline:hover {
+  text-decoration: none;
+}
+
+.transform-translate-n6-n6 {
+  transform: translate(-50%, -50%);
+}
+
+.transform-translate-n6-n4 {
+  transform: translate(-50%, -30%);
+}
+
+.hide {
+  display: none;
+}
+
+.height-fluid {
+  height: 100%;
+}
+
+.w-unset {
+  width: 0;
+  width: unset;
+}
+
+.height-unset {
+  height: unset !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.show {
+  display: block;
+}
+
+.position-fixed {
+  position: fixed;
+  z-index: $zindex-fixed;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-sticky {
+  position: sticky;
+  z-index: $zindex-sticky;
+}
+
+.muted {
+    color: $color-muted;
+    pointer-events: none;
+    cursor: default;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

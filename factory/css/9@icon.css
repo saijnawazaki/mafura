@@ -1,0 +1,53 @@
+.icon-app {
+  position: relative;
+  text-align: center;
+  padding: 6px;
+  margin-bottom: 1.25rem;
+  color: black;
+}
+
+.icon-app:hover {
+  box-shadow:inset 0px 0px 0px 3px #2effc3;
+}
+
+.icon-app a {
+  text-decoration: none;
+  color: black;
+}
+
+.icon-app-img {
+  width: 48px;
+  height: 48px;
+  border-radius: .25rem;
+  text-align: center;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.icon-app-img-wrap
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-app-caption {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  word-break: keep-all;
+}
+
+.icon-drop-down {
+  display: inline-block;
+  margin-left: .255em;
+  vertical-align: .255em;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+}

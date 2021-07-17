@@ -1,0 +1,125 @@
+/* NAV-BAR */
+.nav-bar
+{
+    padding: 1rem;
+    display: block;
+    transition: all 1s;
+}
+
+.nav-bar:hover
+{
+    padding: 1rem 1rem 1rem 2rem;
+    background-color: $color-light-darken;
+    color: $color-black;
+    text-decoration: none;
+}
+
+.nav
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+}
+
+.nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.nav-fill .nav-item, .nav-fill > .nav-link {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.nav-justified .nav-item, .nav-justified > .nav-link {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-tabs-bar
+{
+    background-color: #d5d5d5;
+    color: black;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+}
+
+
+.nav-tabs-bar-nav
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    justify-content: space-around;
+    margin-right: 1rem;
+}
+
+.nav-tabs-bar-item
+{
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.nav-tabs-bar-menu-wrap
+{
+    width: 100%;
+    display: flex;
+}
+
+.nav-tabs-bar-item,
+.nav-tabs-bar-item a {
+  text-decoration: none;
+  color: #000000;
+  width: auto;
+}
+
+.nav-tabs-bar-item :hover,
+.nav-tabs-bar-brand:hover {
+  color: #ffffff;
+}
+
+
+.nav-tabs-bar-item-text {
+  display: none;
+}
+
+/* PILLS */
+.nav-pills .nav-link.active {
+    color: $color-black;
+    background-color: $color-light-darken;
+}

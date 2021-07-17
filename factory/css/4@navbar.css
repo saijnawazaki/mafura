@@ -1,0 +1,138 @@
+.navbar-container {
+    width: 100%;
+    z-index: $zindex-fixed;
+    overflow-x: auto;
+}
+
+.navbar {
+    background-color: $color-black;
+    color: $color-white;
+    width: 100%;
+    display: flex;
+    z-index: $zindex-fixed;
+    overflow-x: auto;
+}
+
+.navbar-brand-title {
+    display: inline-block;
+    font-size: 22px;
+    line-height: 24px;
+    position: relative;
+    vertical-align: middle;
+    color: $color-white;
+}
+
+.navbar-brand-subtitle {
+    display: inline-block;
+    font-size: 22px;
+    line-height: 24px;
+    position: relative;
+    top: -1.5px;
+    vertical-align: middle;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+.navbar-item {
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.navbar-menu-wrap {
+    width: 100%;
+    display: flex;
+}
+
+
+.navbar-brand {
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0.5rem;
+    color: $color-white;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar-brand-image {
+    filter: contrast(0) brightness(100);
+}
+
+.navbar-brand-second {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.navbar-brand-main:hover {
+    opacity: 0;
+}
+
+.navbar-brand-image:hover {
+    filter: contrast(1);
+}
+
+.navbar-item,
+.navbar-item a {
+  text-decoration: none;
+  color: $color-white;
+  width: auto;
+}
+
+.navbar-item :hover,
+.navbar-brand:hover {
+  color: $color-primary;
+}
+
+.navbar-item-text {
+    display: none;
+}
+
+.navbar-menu-expand {
+    overflow-y: auto;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    background-color: $color-dark;
+    color: $color-white;
+    display: none;
+    z-index: $zindex-fixed-menu;
+}
+
+.navbar-menu-expand-sm {
+    width: 100%;
+    overflow-y: auto;
+    background-color: $color-dark;
+    display: none;
+    z-index: $zindex-fixed-menu;
+    padding: 4rem 0.5rem 1rem 0.5rem;
+    top: 0;
+}
+
+.navbar-side-item-text {
+    display: inline-block;
+}
+
+.navbar-side-item {
+    width: auto;
+}
+
+.navbar-side-nav {
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .navbar-item-text {
+        display: inline-block;
+      }
+}
