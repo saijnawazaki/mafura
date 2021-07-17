@@ -18,7 +18,7 @@ $files = array_diff(scandir($path), array('.', '..'));
   <body>
     <div class="navbar-container">
       <nav class="navbar bg-danger" role="navigation">
-        <div class="container">
+        <div class="container-fluid">
             <img class="navbar-brand navbar-brand-image" src="assets/mafura_40x40px.png">
         </div>
       </nav>

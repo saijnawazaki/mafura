@@ -25,7 +25,7 @@ foreach($files as $index => $filename) {
         $exp_filename = explode('@', $filename);
         $content[$exp_filename[0]] = file_get_contents($path.'/'.$filename);
 
-        preg_match_all('/(\^[a-zA-Z0-9_]+\([a-zA-Z0-9_ \%\$\!\*\.\,\-\'\"\=\>\(\)]+\)\;)/', $content[$exp_filename[0]], $matches);
+        preg_match_all('/(\^[a-zA-Z0-9_]+\([a-zA-Z0-9_ \%\$\!\*\.\,\-\'\"\=\>\(\)\/]+\)\;)/', $content[$exp_filename[0]], $matches);
 
 
         if($filename == '6@common.css' && FALSE)

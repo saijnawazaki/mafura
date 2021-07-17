@@ -83,6 +83,45 @@ echo codeBlock($code);
 echo codePreview($code);
 ?>
 
+<h5>Right Menu</h5>
+<?php
+$code = '
+<div class="navbar-container">
+  <div class="bg-dark color-light">
+    <div class="container-fluid">
+      <a href="#" class="color-light">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M10 6 L2 16 10 26 M2 16 L30 16" />
+        </svg>
+        
+      </a>
+    </div>
+  </div>
+  <nav class="navbar" role="navigation">
+    <a href="#" class="navbar-brand link-no-underline">
+      <span class="navbar-brand-title">
+        Mafura
+      </span>
+    </a>
+    <ul class="navbar-nav">
+      <li class="navbar-item">
+        Menu 1
+      </li>
+      <li class="navbar-item">
+        Menu 2
+      </li>
+      <li class="navbar-item">
+        Menu 2
+      </li>
+    </ul>
+  </nav>
+  
+</div>
+';
+echo codeBlock($code);
+echo codePreview($code);
+?>
+
 <h5>Sub-Title</h5>
 <?php
 $code = '
