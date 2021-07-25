@@ -1,5 +1,5 @@
 <?php
-/*
+/*!
 * Mafura-Red Factory
 * saijnawazaki
 * Simple PHP for merge all css file to one "One For All"
@@ -25,30 +25,29 @@ foreach($files as $index => $filename) {
         $exp_filename = explode('@', $filename);
         $content[$exp_filename[0]] = file_get_contents($path.'/'.$filename);
 
-        preg_match_all('/(\^[a-zA-Z0-9_]+\([a-zA-Z0-9_ \%\$\!\*\.\,\-\'\"\=\>\(\)\/]+\)\;)/', $content[$exp_filename[0]], $matches);
+        preg_match_all('/@@[a-zA-Z0-9\_\-\s]+\(+[a-zA-Z0-9\(\)\'\"\_\-\=\>\.\*\,\%\$\[\]\s]+\)\;/', $content[$exp_filename[0]], $matches);
 
-
-        if($filename == '6@common.css' && FALSE)
-        {
-
-          print('<pre>'.print_r($matches,true).'</pre>');
-          //echo $content[$exp_filename[0]];
-        }
+        //print('<pre>'.print_r($matches,true).'</pre>');
 
         foreach($matches[0] as $var)
         {
-            $function_final = str_replace('^', '', $var);
+            $function_final = str_replace('@@', '', $var);
 
+            //echo $function_final.'<hr>';
             eval("\$result = ".$function_final);
+            //echo $result;
 
             $content[$exp_filename[0]] = str_replace($var, $result, $content[$exp_filename[0]]);
         }
 
         preg_match_all('/(\$[a-zA-Z0-9-_]+)/', $content[$exp_filename[0]], $matches);
 
+        //print('<pre>'.print_r($matches,true).'</pre>');
+
         foreach($matches[0] as $var)
         {
-          $content[$exp_filename[0]] = preg_replace("/\\" .$var. "(?=\s|$|,|\.|\;)/", $format[$var], $content[$exp_filename[0]]);
+          //$content[$exp_filename[0]] = preg_replace("/\\" .$var. "(?=\s|$|,|\.|\;)/", $format[$var], $content[$exp_filename[0]]);
+          $content[$exp_filename[0]] = str_replace($var, $format[$var], $content[$exp_filename[0]]);
 
           /*foreach($format as $target_format => $replace_with_value) {
               //$content[$exp_filename[0]] = str_replace($target_format, $replace_with_value, $content[$exp_filename[0]]);
@@ -57,7 +56,7 @@ foreach($files as $index => $filename) {
 
 
 
-        if($filename == '6@common.css' && FALSE)
+        if($filename == '03@flexboxgrid.css' && FALSE)
         {
 
           //print('<pre>'.print_r($matches,true).'</pre>');
