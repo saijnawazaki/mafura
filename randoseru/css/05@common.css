@@ -1,0 +1,5 @@
+.bg-$index {
+
+		background-color: $value !important;
+	
+ }

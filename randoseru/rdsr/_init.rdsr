@@ -1,0 +1,29 @@
+$color-list: ['red'=>'red','green'=>'green','blue'=>'blue'];
+
+$color-red: #dc3545; /* danger */
+$color-light-red: #dd878f;
+$color-dark-red: #a61522;
+
+$color-green: #198754; /* success */
+$color-light-green: #198754;
+$color-dark-green: #198754;
+
+$color-blue: #0d6efd; /* primary */
+$color-light-blue: #0d6efd;
+$color-dark-blue: #0d6efd;
+
+$color-gray: #6c757d; /* secondary */
+$color-light-gray: #dbdbdb;
+$color-dark-gray: #6c757d;
+
+$color-orange: #ffc107; /* warning */
+$color-light-orange: #ffc107;
+$color-dark-orange: #ffc107
+
+$color-white: #000;
+$color-light-white: #000;
+$color-dark-white: #000;
+
+$color-black: #fff;
+$color-light-black: #fff;
+$color-dark-black: #fff;

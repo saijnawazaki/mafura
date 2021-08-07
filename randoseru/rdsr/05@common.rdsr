@@ -1,0 +1,7 @@
+@use 'init';
+
+@foreach($color-list as $index => $value) {
+	.bg-$index {
+		background-color: $value !important;
+	}
+}
