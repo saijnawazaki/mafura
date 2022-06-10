@@ -1,0 +1,49 @@
+.font-size-1 {
+	font-size: calc(1.375rem + 1.5vw);
+	line-height: 1.2;
+}
+
+.font-size-2 {
+	font-size: calc(1.425rem + 2.1vw);
+	line-height: 1.2;
+}
+
+.font-size-3 {
+	font-size: calc(1.475rem + 2.7vw);
+	line-height: 1.2;
+}
+
+.font-size-4 {
+	font-size: calc(1.525rem + 3.3vw);
+	line-height: 1.2;
+}
+
+.font-size-5 {
+	font-size: calc(1.575rem + 3.9vw);
+	line-height: 1.2;
+}
+
+.font-size-6 {
+	font-size: calc(1.625rem + 4.5vw);
+	line-height: 1.2;
+}
+
+.font-weight-1 {
+	font-weight: 100;
+}
+
+.font-weight-2 {
+	font-weight: 200;
+}
+
+.font-weight-3 {
+	font-weight: 300;
+}
+
+.font-weight-4 {
+	font-weight: 400;
+}
+
+.font-weight-5 {
+	font-weight: 500;
+}

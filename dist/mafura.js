@@ -1,13 +1,4 @@
 window.addEventListener('load', function(){
-  //go to top
-  /*
-    document.getElementById('btn-goToTop').addEventListener('click', function(){
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  */
-  //navbar
-
-  //let navbar_bar = document.getElementsByClassName("navbar-bar");
   let navbar_bar = document.querySelectorAll('[data-toggle="collapse_slide"]');
   let navbar_side_bar = document.getElementsByClassName("navbar-side-bar");
   let fun_scroll = document.getElementsByClassName("fun-scroll");
@@ -127,8 +118,6 @@ var collapse_slide = function() {
       iconClass = document.querySelector(this.getAttribute('data-iconclass'));
     }
 
-    console.log('??');
-
     let iconTrue = this.getAttribute('data-icontrue');
     let iconFalse = this.getAttribute('data-iconfalse');
 
@@ -152,7 +141,6 @@ var collapse_slide = function() {
           iconClass.classList.remove(iconClassTrue);
           iconClass.classList.add(iconClassFalse);
         }
-        //elem_targetId.classList.remove('show');
     }
     else
     {

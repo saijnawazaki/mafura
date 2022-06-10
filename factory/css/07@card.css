@@ -36,7 +36,7 @@
   padding: 0.5rem;
   color: #fff;
   background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4) 86%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(0deg, rgba(0,153,255,1) 0%, rgba(0,153,255,0.4) 86%, rgba(0,153,255,0) 100%);
   width: 100%;
   font-size: 12px;
   text-align: right;
@@ -74,6 +74,10 @@
 
 .card-column .card {
     margin-bottom: .75rem;
+}
+
+.card > a:hover {
+  color: $color-dark-lighten !important;
 }
 
 @media (min-width: 576px) {

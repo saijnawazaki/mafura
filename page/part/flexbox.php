@@ -367,14 +367,14 @@ echo codePreview($code);
 $code = '
 <div class="row">
   <div class="col-md-4 bg-primary">.col-md-4</div>
-  <div class="col-md-4 ml-auto bg-success">.col-md-4 .ml-auto</div>
+  <div class="col-md-4 ms-auto bg-success">.col-md-4 .ms-auto</div>
 </div>
 <div class="row">
-  <div class="col-md-3 ml-md-auto bg-danger">.col-md-3 .ml-md-auto</div>
-  <div class="col-md-3 ml-md-auto bg-warning">.col-md-3 .ml-md-auto</div>
+  <div class="col-md-3 ms-md-auto bg-danger">.col-md-3 .ms-md-auto</div>
+  <div class="col-md-3 ms-md-auto bg-warning">.col-md-3 .ms-md-auto</div>
 </div>
 <div class="row">
-  <div class="col-auto mr-auto bg-info">.col-auto .mr-auto</div>
+  <div class="col-auto me-auto bg-info">.col-auto .me-auto</div>
   <div class="col-auto bg-success">.col-auto</div>
 </div>
 ';

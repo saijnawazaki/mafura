@@ -42,7 +42,7 @@ $code = '
       <h4>Alert Title</h4>
       <p>Alert Content</p>
       <div class="text-right">
-        <a href="javascript:void(0)" class="mr-2 link-no-underline" data-toggle="hide" aria-controls="alert_open_dismiss">
+        <a href="javascript:void(0)" class="me-2 link-no-underline" data-toggle="hide" aria-controls="alert_open_dismiss">
           OK
         </a>
         <button type="button" data-toggle="hide" aria-controls="alert_open_dismiss">OK</button>
@@ -57,11 +57,11 @@ $code = '
 <div role="alert" id="alert_open_dismiss" class="position-fixed top-0 left-0 width-fluid height-vh hide">
   <div class="position-relative width-fluid height-vh d-flex justify-content-center">
     <div class="bg-dark position-absolute width-fluid height-vh top-0 left-0 opacity-3" data-toggle="hide" aria-controls="alert_open_dismiss"></div>
-    <div class="bg-light bc-muted color-dark br-2 p-3 position-absolute mt-3 ml-auto mr-auto mb-auto" style="width: 500px;">
+    <div class="bg-light bc-muted color-dark br-2 p-3 position-absolute mt-3 ms-auto me-auto mb-auto" style="width: 500px;">
       <h4>Alert Title</h4>
       <p>Alert Content</p>
       <div class="text-right">
-        <a href="javascript:void(0)" class="mr-2 link-no-underline" data-toggle="hide" aria-controls="alert_open_dismiss">
+        <a href="javascript:void(0)" class="me-2 link-no-underline" data-toggle="hide" aria-controls="alert_open_dismiss">
           OK
         </a>
         <button type="button" data-toggle="hide" aria-controls="alert_open_dismiss">OK</button>
@@ -80,7 +80,7 @@ echo codePreview($code);
 $code = '
 <button type="button" id="alert_open_toast" data-toggle="show" aria-controls="alert_open_toast_dismiss">Open Dialog</button>
 <div role="alert" id="alert_open_toast_dismiss" class="position-fixed bottom-0 left-0 width-fluid hide">
-  <div class="bg-dark color-white ml-3 mr-3 mb-3 pt-2 pb-2 pl-3 pr-3">
+  <div class="bg-dark color-white ms-3 me-3 mb-3 pt-2 pb-2 pl-3 pr-3">
       <button type="button" class="button-close-white float-right" data-toggle="hide" aria-controls="alert_open_toast_dismiss"></button>
     Toast
   </div>

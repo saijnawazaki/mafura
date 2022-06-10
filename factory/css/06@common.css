@@ -90,6 +90,10 @@
   vertical-align: text-bottom;
 }
 
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
 .text-center {
   text-align: center;
 }
@@ -100,10 +104,6 @@
 
 .text-right {
   text-align: right;
-}
-
-.width-s-panel {
-  width: 400px;
 }
 
 .height-vh {
@@ -146,8 +146,7 @@
   height: 100%;
 }
 
-.w-unset {
-  width: 0;
+.width-unset {
   width: unset;
 }
 
@@ -193,3 +192,16 @@
   cursor: not-allowed;
   opacity: 0.6;
 }
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* BORDER STYLE */
+^func_loop('border-style-*',array('border'=>'* !important'),array('solid'=>'solid','dashed'=>'dashed','dotted'=>'dotted','double'=>'double','groove'=>'groove','ridge'=>'ridge'));

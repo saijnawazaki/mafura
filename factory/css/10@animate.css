@@ -16,6 +16,11 @@
   cursor: pointer;
 }
 
+.animated-humburger-menu-icon:hover,
+.animated-humburger-menu-icon-x:hover  {
+  background-color: #606060 !important;
+}
+
 .animated-humburger-menu-icon span,
 .animated-humburger-menu-icon-x span {
     position: absolute;
@@ -76,14 +81,14 @@
 /* ANIMATED UNDERLINE */
 .animated-underline
 {
-  color: #999;
+  color: $color-dark-lighten;
   position: relative;
   display: inline-block;
 }
 
 .animated-underline a
 {
-    color: #999;
+    color: $color-dark-lighten;
     text-decoration: none;
 }
 
@@ -101,7 +106,7 @@
 }
 
 .animated-underline a:hover {
-    color: $color-primary;
+    color: $color-dark !important;
 }
 
 .animated-underline:hover::after
@@ -210,7 +215,7 @@
   }
 
   to {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, -1%, 0);
   }
 }
 
@@ -279,4 +284,19 @@
 
 .animated-spin {
   animation-name: animated-spin;
+}
+
+@keyframes animated-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animated-fade-in-up {
+  animation-name: animated-fade-in-up;
 }

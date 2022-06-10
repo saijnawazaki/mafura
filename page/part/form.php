@@ -64,8 +64,8 @@ echo codePreview($code);
 <h5>Radio</h5>
 <?php
 $code = '
-<label class="mr-2"><input type="radio" name="radio" value="option_1"> Option 1</label>
-<label class="mr-2"><input type="radio" name="radio" value="option_2"> Option 2</label>
+<label class="me-2"><input type="radio" name="radio" value="option_1"> Option 1</label>
+<label class="me-2"><input type="radio" name="radio" value="option_2"> Option 2</label>
 ';
 echo codeBlock($code);
 echo codePreview($code);
@@ -74,8 +74,8 @@ echo codePreview($code);
 <h5>Checkbox</h5>
 <?php
 $code = '
-<label class="mr-2"><input type="checkbox" value="option_1"> Option 1</label>
-<label class="mr-2"><input type="checkbox" value="option_2"> Option 2</label>
+<label class="me-2"><input type="checkbox" value="option_1"> Option 1</label>
+<label class="me-2"><input type="checkbox" value="option_2"> Option 2</label>
 ';
 echo codeBlock($code);
 echo codePreview($code);

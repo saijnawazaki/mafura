@@ -14,21 +14,13 @@
 }
 
 .navbar-brand-title {
-    display: inline-block;
-    font-size: 22px;
-    line-height: 24px;
-    position: relative;
-    vertical-align: middle;
     color: $color-white;
-}
-
-.navbar-brand-subtitle {
-    display: inline-block;
-    font-size: 22px;
-    line-height: 24px;
-    position: relative;
-    top: -1.5px;
-    vertical-align: middle;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
 .navbar-nav {
@@ -40,7 +32,6 @@
     align-items: center;
     width: 100%;
     justify-content: flex-end;
-    margin-right: 1rem;
 }
 
 .navbar-item {
@@ -91,7 +82,7 @@
 
 .navbar-item :hover,
 .navbar-brand:hover {
-  color: $color-primary;
+  color: $color-dark-lighten !important;
 }
 
 .navbar-item-text {
@@ -104,7 +95,7 @@
     background-color: $color-dark;
     color: $color-white;
     display: none;
-    z-index: $zindex-fixed-menu;
+    z-index: $zindex-fixed-menu !important;
 }
 
 .navbar-menu-expand-sm {
@@ -112,7 +103,7 @@
     overflow-y: auto;
     background-color: $color-dark;
     display: none;
-    z-index: $zindex-fixed-menu;
+    z-index: $zindex-fixed-menu !important;
     padding: 4rem 0.5rem 1rem 0.5rem;
     top: 0;
 }

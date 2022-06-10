@@ -6,6 +6,10 @@ $files = scandir($path);
 
 $files = array_diff(scandir($path), array('.', '..'));
 
+$files_doc = scandir('doc');
+
+$files_doc = array_diff(scandir('doc'), array('.', '..'));
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -29,6 +33,15 @@ $files = array_diff(scandir($path), array('.', '..'));
         <div class="col-12 col-md-2">
           <div class="position-sticky top-0">
             <div style="overflow:auto; height: 100vh;">
+              <h4>Doc</h4>
+              <hr>
+              <?php
+              foreach($files_doc as $index => $filename) {
+                  echo '<a class="nav-bar" href="#'.str_replace('.php','',$filename).'">'.ucfirst(str_replace('_',' ',str_replace('.php', '', $filename))).'</a>';
+              }
+              ?>
+              <h4>Part</h4>
+              <hr>
               <?php
               foreach($files as $index => $filename) {
                   echo '<a class="nav-bar" href="#'.str_replace('.php','',$filename).'">'.ucfirst(str_replace('.php', '', $filename)).'</a>';
@@ -46,6 +59,16 @@ $files = array_diff(scandir($path), array('.', '..'));
         </div>
         <div class="col-12 col-md-10">
           <?php
+          foreach($files_doc as $index => $filename) {
+              $exp_filename = explode('.', $filename);
+              $filename_ext = end($exp_filename);
+
+              if($filename_ext == 'php')
+              {
+                  include ('doc/'.$filename);
+              }
+          }
+
           foreach($files as $index => $filename) {
               $exp_filename = explode('.', $filename);
               $filename_ext = end($exp_filename);

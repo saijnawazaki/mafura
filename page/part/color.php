@@ -7,21 +7,21 @@
 $code = '
 <h1>Primary</h1>
 <div class="bg-primary-lighten d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Lighten</div>
     <div class="color-muted">Lighten</div>
     <div class="color-white">Lighten</div>
   </h4>
 </div>
 <div class="bg-primary d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Normal</div>
     <div class="color-muted">Normal</div>
     <div class="color-white">Normal</div>
   </h4>
 </div>
 <div class="bg-primary-darken d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Darken</div>
     <div class="color-muted">Darken</div>
     <div class="color-white">Darken</div>
@@ -30,21 +30,21 @@ $code = '
 
 <h1>Secondary</h1>
 <div class="bg-secondary-lighten d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Lighten</div>
     <div class="color-muted">Lighten</div>
     <div class="color-white">Lighten</div>
   </h4>
 </div>
 <div class="bg-secondary d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Normal</div>
     <div class="color-muted">Normal</div>
     <div class="color-white">Normal</div>
   </h4>
 </div>
 <div class="bg-secondary-darken d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Darken</div>
     <div class="color-muted">Darken</div>
     <div class="color-white">Darken</div>
@@ -53,21 +53,21 @@ $code = '
 
 <h1>Success</h1>
 <div class="bg-success-lighten d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Lighten</div>
     <div class="color-muted">Lighten</div>
     <div class="color-white">Lighten</div>
   </h4>
 </div>
 <div class="bg-success d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Normal</div>
     <div class="color-muted">Normal</div>
     <div class="color-white">Normal</div>
   </h4>
 </div>
 <div class="bg-success-darken d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Darken</div>
     <div class="color-muted">Darken</div>
     <div class="color-white">Darken</div>
@@ -76,21 +76,21 @@ $code = '
 
 <h1>Danger</h1>
 <div class="bg-danger-lighten d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Lighten</div>
     <div class="color-muted">Lighten</div>
     <div class="color-white">Lighten</div>
   </h4>
 </div>
 <div class="bg-danger d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Normal</div>
     <div class="color-muted">Normal</div>
     <div class="color-white">Normal</div>
   </h4>
 </div>
 <div class="bg-danger-darken d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Darken</div>
     <div class="color-muted">Darken</div>
     <div class="color-white">Darken</div>
@@ -99,21 +99,21 @@ $code = '
 
 <h1>Warning</h1>
 <div class="bg-warning-lighten d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Lighten</div>
     <div class="color-muted">Lighten</div>
     <div class="color-white">Lighten</div>
   </h4>
 </div>
 <div class="bg-warning d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Normal</div>
     <div class="color-muted">Normal</div>
     <div class="color-white">Normal</div>
   </h4>
 </div>
 <div class="bg-warning-darken d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Darken</div>
     <div class="color-muted">Darken</div>
     <div class="color-white">Darken</div>
@@ -122,21 +122,21 @@ $code = '
 
 <h1>Info</h1>
 <div class="bg-info-lighten d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Lighten</div>
     <div class="color-muted">Lighten</div>
     <div class="color-white">Lighten</div>
   </h4>
 </div>
 <div class="bg-info d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Normal</div>
     <div class="color-muted">Normal</div>
     <div class="color-white">Normal</div>
   </h4>
 </div>
 <div class="bg-info-darken d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Darken</div>
     <div class="color-muted">Darken</div>
     <div class="color-white">Darken</div>
@@ -145,21 +145,21 @@ $code = '
 
 <h1>Light</h1>
 <div class="bg-light-lighten d-inline-block position-relative border-1" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Lighten</div>
     <div class="color-muted">Lighten</div>
     <div class="color-white">Lighten</div>
   </h4>
 </div>
 <div class="bg-light d-inline-block position-relative border-1" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Normal</div>
     <div class="color-muted">Normal</div>
     <div class="color-white">Normal</div>
   </h4>
 </div>
 <div class="bg-light-darken d-inline-block position-relative border-1" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Darken</div>
     <div class="color-muted">Darken</div>
     <div class="color-white">Darken</div>
@@ -168,21 +168,21 @@ $code = '
 
 <h1>Dark</h1>
 <div class="bg-dark-lighten d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Lighten</div>
     <div class="color-muted">Lighten</div>
     <div class="color-white">Lighten</div>
   </h4>
 </div>
 <div class="bg-dark d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Normal</div>
     <div class="color-muted">Normal</div>
     <div class="color-white">Normal</div>
   </h4>
 </div>
 <div class="bg-dark-darken d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Darken</div>
     <div class="color-muted">Darken</div>
     <div class="color-white">Darken</div>
@@ -191,21 +191,21 @@ $code = '
 
 <h1>Solo</h1>
 <div class="bg-muted d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Muted</div>
     <div class="color-muted">Muted</div>
     <div class="color-white">Muted</div>
   </h4>
 </div>
 <div class="bg-black d-inline-block position-relative" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">Black</div>
     <div class="color-muted">Black</div>
     <div class="color-white">Black</div>
   </h4>
 </div>
 <div class="bg-white d-inline-block position-relative border-1" style="width: 120px; height: 120px;">
-  <h4 class="position-absolute bottom-0 right-0 mr-2">
+  <h4 class="position-absolute bottom-0 right-0 me-2">
     <div class="color-black">White</div>
     <div class="color-muted">White</div>
     <div class="color-white">White</div>
