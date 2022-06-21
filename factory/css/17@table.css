@@ -1,5 +1,5 @@
 table {
-  border: 1px solid #212529;
+  border: 1px solid #ced4da;
   width: 100%;
   color: #212529;
   caption-side: bottom;
@@ -8,7 +8,7 @@ table {
 
 table th, table td {
   padding: .75rem;
-  border: 1px solid #212529;
+  border: 1px solid #ced4da;
 }
 
 .border-0 th, .border-0 td {
@@ -27,7 +27,7 @@ tbody, td, tfoot, th, thead, tr {
 }
 
 table > :not(caption) > * > * {
-  padding: .2rem .2rem;
+  padding: .4rem .4rem;
   background-color: transparent;
   border-bottom-width: 1px;
   box-shadow: inset 0 0 0 9999px transparent;
