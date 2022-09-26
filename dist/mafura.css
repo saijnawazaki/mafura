@@ -3,7 +3,7 @@
 * Mafura
 * http://github.com/saijnawazaki/mafura
 * Licensed under MIT
-* Generated At: Mon, 20 Jun 2022 23:32:54 +0700
+* Generated At: Tue, 27 Sep 2022 01:14:10 +0700
 */
 :root {
 	--mf-bg-color: #FFF;
@@ -6431,6 +6431,26 @@ form {
   animation-delay: 5s;
 }
 
+.animated-delay-6s {
+  animation-delay: 6s;
+}
+
+.animated-delay-7s {
+  animation-delay: 7s;
+}
+
+.animated-delay-8s {
+  animation-delay: 8s;
+}
+
+.animated-delay-9s {
+  animation-delay: 9s;
+}
+
+.animated-delay-10s {
+  animation-delay: 10s;
+}
+
 .animated-fast {
   animation-duration: 800ms;
 }
@@ -6584,6 +6604,21 @@ form {
 }
 .animated-fade-in-up {
   animation-name: animated-fade-in-up;
+}
+
+@keyframes animated-fade-out-right {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.animated-fade-out-right {
+  animation-name: animated-fade-out-right;
 }
 
 select[multiple=""] {
