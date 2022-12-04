@@ -335,3 +335,12 @@
 .animated-fade-out-right {
   animation-name: animated-fade-out-right;
 }
+
+@keyframes animated-rotate {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+
+.animated-rotate {
+  animation-name: animated-rotate;
+}
