@@ -81,11 +81,11 @@ $app_theme_size_scale = array(
 
 $app_theme_breakpoint = array(
     '0' => array('id' => ''),
-    '576px' => array('id' => 'sm'),
-    '768px' => array('id' => 'md'),
-    '992px' => array('id' => 'lg'),
-    '1200px' => array('id' => 'xl'),
-    '1400px' => array('id' => 'xxl'),
+    '576px' => array('id' => '-sm'),
+    '768px' => array('id' => '-md'),
+    '992px' => array('id' => '-lg'),
+    '1200px' => array('id' => '-xl'),
+    '1400px' => array('id' => '-xxl'),
 );
 
 $app_theme_z_index = array(
@@ -99,6 +99,22 @@ $app_theme_z_index = array(
     'modal' => '1055',
     'popover' => '1070',
     'tooltip' => '1080',
+);
+
+$app_theme_size_scale_grid = array(
+    '-auto' => 'auto',
+    '-1' => '8.33333333%',
+    '-2' => '16.66666667%',
+    '-3' => '25%',
+    '-4' => '33.33333333%',
+    '-5' => '41.66666667%',
+    '-6' => '50%',
+    '-7' => '58.33333333%',
+    '-8' => '66.66666667%',
+    '-9' => '75%',
+    '-10' => '83.33333333%',
+    '-11' => '91.66666667%',
+    '-12' => '100%',
 );
 
 
