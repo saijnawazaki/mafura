@@ -120,4 +120,7 @@ $app_theme_size_scale_grid = array(
 
 $app_theme_root = array(
     'text-color' => '#212529',
+    'background-color' => '#ffffff',
+    'link-color' => '#0d6efd',
+    'link-color-hover' => '#0a58ca',
 );

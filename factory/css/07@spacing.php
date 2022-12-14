@@ -17,25 +17,13 @@ foreach($app_theme_breakpoint as $breakpoint => $value)
     $theme_size_mod['pill'] = '10rem';
     $theme_size_mod['round'] = '50%';
 
-    echo func_loop('border-radius'.$add_bp.'-*',array('border-radius'=>'*'),$app_theme_size);
-    echo func_loop('border-radius-tl'.$add_bp.'-*',array('border-top-left-radius'=>'*'),$app_theme_size);
-    echo func_loop('border-radius-bl'.$add_bp.'-*',array('border-bottom-left-radius'=>'*'),$app_theme_size);
-    echo func_loop('border-radius-tr'.$add_bp.'-*',array('border-top-right-radius'=>'*'),$app_theme_size);
-    echo func_loop('border-radius-br'.$add_bp.'-*',array('border-bottom-right-radius'=>'*'),$app_theme_size);
+    echo func_loop('border-radius'.$add_bp.'-*',array('border-radius'=>'*'),array('0'=>'0','1'=>'0.2rem','2'=>'0.4rem','3'=>'0.8rem','4'=>'1.6rem','5'=>'3.2rem'));
+    echo func_loop('border-radius-tl'.$add_bp.'-*',array('border-top-left-radius'=>'*'),array('0'=>'0','1'=>'0.2rem','2'=>'0.4rem','3'=>'0.8rem','4'=>'1.6rem','5'=>'3.2rem'));
+    echo func_loop('border-radius-bl'.$add_bp.'-*',array('border-bottom-left-radius'=>'*'),array('0'=>'0','1'=>'0.2rem','2'=>'0.4rem','3'=>'0.8rem','4'=>'1.6rem','5'=>'3.2rem'));
+    echo func_loop('border-radius-tr'.$add_bp.'-*',array('border-top-right-radius'=>'*'),array('0'=>'0','1'=>'0.2rem','2'=>'0.4rem','3'=>'0.8rem','4'=>'1.6rem','5'=>'3.2rem'));
+    echo func_loop('border-radius-br'.$add_bp.'-*',array('border-bottom-right-radius'=>'*'),array('0'=>'0','1'=>'0.2rem','2'=>'0.4rem','3'=>'0.8rem','4'=>'1.6rem','5'=>'3.2rem'));
 
     echo func_loop('border-style'.$add_bp.'-*',array('border-style'=>'* !important'),array('solid'=>'solid','dashed'=>'dashed','dotted'=>'dotted','double'=>'double','groove'=>'groove','ridge'=>'ridge'));
-
-    echo func_loop('p'.$add_bp.'-*',array('padding'=>'*'),$app_theme_size);
-    echo func_loop('pr'.$add_bp.'-*',array('padding-right'=>'*'),$app_theme_size);
-    echo func_loop('pb'.$add_bp.'-*',array('padding-bottom'=>'*'),$app_theme_size);
-    echo func_loop('pl'.$add_bp.'-*',array('padding-left'=>'*'),$app_theme_size);
-    echo func_loop('pt'.$add_bp.'-*',array('padding-top'=>'*'),$app_theme_size);
-
-    echo func_loop('m'.$add_bp.'-*',array('margin'=>'*'),$app_theme_size);
-    echo func_loop('mr'.$add_bp.'-*',array('margin-right'=>'*'),$app_theme_size);
-    echo func_loop('mb'.$add_bp.'-*',array('margin-bottom'=>'*'),$app_theme_size);
-    echo func_loop('ml'.$add_bp.'-*',array('margin-left'=>'*'),$app_theme_size);
-    echo func_loop('mt'.$add_bp.'-*',array('margin-top'=>'*'),$app_theme_size);
 
     echo func_loop('left'.$add_bp.'-*',array('left'=>'*'),$app_theme_size);
     echo func_loop('bottom'.$add_bp.'-*',array('bottom'=>'*'),$app_theme_size);
