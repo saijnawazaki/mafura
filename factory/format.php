@@ -1,40 +1,43 @@
 <?php
 define('DEFAULT_COLOR_PATTERN', array(
+  'primary-lighter' => 'primary-lighter',
+  'primary-light' => 'primary-light',
   'primary' => 'primary',
-  'primary-lighten' => 'primary-lighten',
-  'primary-darken' => 'primary-darken',
+  'primary-dark' => 'primary-dark',
+  'primary-darker' => 'primary-darker',
 
-  'secondary' => 'secondary',
-  'secondary-lighten' => 'secondary-lighten',
-  'secondary-darken' => 'secondary-darken',
-
+  'success-lighter' => 'success-lighter',
+  'success-light' => 'success-light',
   'success' => 'success',
-  'success-lighten' => 'success-lighten',
-  'success-darken' => 'success-darken',
+  'success-dark' => 'success-dark',
+  'success-darker' => 'success-darker',
 
+  'danger-lighter' => 'danger-lighter',
+  'danger-light' => 'danger-light',
   'danger' => 'danger',
-  'danger-lighten' => 'danger-lighten',
-  'danger-darken' => 'danger-darken',
+  'danger-dark' => 'danger-dark',
+  'danger-darker' => 'danger-darker',
 
+  'warning-lighter' => 'warning-lighter',
+  'warning-light' => 'warning-light',
   'warning' => 'warning',
-  'warning-lighten' => 'warning-lighten',
-  'warning-darken' => 'warning-darken',
+  'warning-dark' => 'warning-dark',
+  'warning-darker' => 'warning-darker',
 
+  'info-lighter' => 'info-lighter',
+  'info-light' => 'info-light',
   'info' => 'info',
-  'info-lighten' => 'info-lighten',
-  'info-darken' => 'info-darken',
+  'info-dark' => 'info-dark',
+  'info-darker' => 'info-darker',
 
-  'light' => 'light',
-  'light-lighten' => 'light-lighten',
-  'light-darken' => 'light-darken',
-
-  'dark' => 'dark',
-  'dark-lighten' => 'dark-lighten',
-  'dark-darken' => 'dark-darken',
-
-  'muted' => 'muted',
-  'black' => 'black',
   'white' => 'white',
+  'white-dark' => 'white-dark',
+  'white-darker' => 'white-darker',
+
+  'black-lighter' => 'black-lighter',
+  'black-light' => 'black-light',
+  'black' => 'black',
+  
   'transparent' => 'transparent',
 ));
 
@@ -53,41 +56,44 @@ $format = array(
   '$zindex-tooltip' => 1080,
 
   /*Colors*/
-  '$color-primary' => '#007bff',
-  '$color-primary-lighten' => '#7ebcff',
-  '$color-primary-darken' => '#00428a',
+    '$color-primary-lighter' => '#AECEFE',
+    '$color-primary-light' => '#5D9DFD',
+    '$color-primary' => '#0d6efd',
+    '$color-primary-dark' => '#024AB6',
+    '$color-primary-darker' => '#012965',
 
-  '$color-secondary' => '#d52941',
-  '$color-secondary-lighten' => '#f4596e',
-  '$color-secondary-darken' => '#9b2837',
+    '$color-success-lighter' => '#BAF2D8',
+    '$color-success-light' => '#75E6B1',
+    '$color-success' => '#30D98A',
+    '$color-success-dark' => '#1D9A60',
+    '$color-success-darker' => '#105635',
 
-  '$color-success' => '#28a745',
-  '$color-success-lighten' => '#06fb3e',
-  '$color-success-darken' => '#057d20',
+    '$color-warning-lighter' => '#FFEBAD',
+    '$color-warning-light' => '#FFD65C',
+    '$color-warning' => '#ffc107',
+    '$color-warning-dark' => '#B88A00',
+    '$color-warning-darker' => '#664D00',
 
-  '$color-danger' => '#dc3545',
-  '$color-danger-lighten' => '#f40017',
-  '$color-danger-darken' => '#ae0918',
+    '$color-danger-lighter' => '#F6CBCF',
+    '$color-danger-light' => '#EA8690',
+    '$color-danger' => '#dc3545',
+    '$color-danger-dark' => '#AD1F2D',
+    '$color-danger-darker' => '#68121B',
 
-  '$color-warning' => '#ffc107',
-  '$color-warning-lighten' => '#ffd861',
-  '$color-warning-darken' => '#bd8e00',
+    '$color-info-lighter' => '#B1EFFB',
+    '$color-info-light' => '#64DEF7',
+    '$color-info' => '#0dcaf0',
+    '$color-info-dark' => '#0993AE',
+    '$color-info-darker' => '#055261',
 
-  '$color-info' => '#17a2b8',
-  '$color-info-lighten' => '#00d3f4',
-  '$color-info-darken' => '#005562',
+    '$color-white' => '#ffffff',
+    '$color-white-dark' => '#D6D6D6',
+    '$color-white-darker' => '#ADADAD',
 
-  '$color-light' => '#ececec',
-  '$color-light-darken' => '#dfdfdf',
-  '$color-light-lighten' =>'#f7f7f7',
+    '$color-black-lighter' => '#525252',
+    '$color-black-light' => '#292929',
+    '$color-black' => '#000000',
 
-  '$color-dark' => '#343a40',
-  '$color-dark-lighten' => '#767677',
-  '$color-dark-darken' => '#141424',
-
-  '$color-muted' => '#6c757d',
-  '$color-black' => '#000000',
-  '$color-white' => '#ffffff',
   '$color-transparent' => 'transparent',
 
 );
