@@ -82,7 +82,7 @@
 
 .navbar-item :hover,
 .navbar-brand:hover {
-  color: $color-dark-lighten !important;
+  color: $color-black-lighter !important;
 }
 
 .navbar-item-text {
@@ -92,7 +92,7 @@
 .navbar-menu-expand {
     overflow-y: auto;
     padding: 1rem 0.5rem 1rem 0.5rem;
-    background-color: $color-dark;
+    background-color: $color-black;
     color: $color-white;
     display: none;
     z-index: $zindex-fixed-menu !important;
@@ -101,7 +101,7 @@
 .navbar-menu-expand-sm {
     width: 100%;
     overflow-y: auto;
-    background-color: $color-dark;
+    background-color: $color-black;
     display: none;
     z-index: $zindex-fixed-menu !important;
     padding: 4rem 0.5rem 1rem 0.5rem;

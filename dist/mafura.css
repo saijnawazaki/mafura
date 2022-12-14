@@ -3,7 +3,7 @@
 * Mafura
 * http://github.com/saijnawazaki/mafura
 * Licensed under MIT
-* Generated At: Thu, 15 Dec 2022 01:29:05 +0700
+* Generated At: Thu, 15 Dec 2022 05:08:53 +0700
 */
 :root {
 	--mf-bg-color: #FFF;
@@ -5440,7 +5440,7 @@ template {
 
 .navbar-item :hover,
 .navbar-brand:hover {
-  color:  !important;
+  color: #525252 !important;
 }
 
 .navbar-item-text {
@@ -5450,7 +5450,7 @@ template {
 .navbar-menu-expand {
     overflow-y: auto;
     padding: 1rem 0.5rem 1rem 0.5rem;
-    background-color: ;
+    background-color: #000000;
     color: #ffffff;
     display: none;
     z-index: 1025 !important;
@@ -5459,7 +5459,7 @@ template {
 .navbar-menu-expand-sm {
     width: 100%;
     overflow-y: auto;
-    background-color: ;
+    background-color: #000000;
     display: none;
     z-index: 1025 !important;
     padding: 4rem 0.5rem 1rem 0.5rem;
@@ -5987,7 +5987,7 @@ min-height: 32rem !important;
 }
 
 .hover:hover {
-  background-color:  !important;
+  background-color: #D6D6D6 !important;
   color: #000000 !important;
 }
 
@@ -6088,7 +6088,7 @@ min-height: 32rem !important;
 }
 
 .muted {
-    color: ;
+    color: #D6D6D6;
     pointer-events: none;
     cursor: default;
 }
@@ -6106,6 +6106,35 @@ min-height: 32rem !important;
   content: "";
   clear: both;
   display: table;
+}
+
+.list-style-none
+{
+  list-style: none;
+}
+
+.width-auto {
+  width: auto;
+}
+
+.image-white-color {
+  filter: contrast(0) brightness(100);
+}
+
+.image-white-color:hover {
+  filter: contrast(1);
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.z-index-fixed-menu {
+  z-index: 1025;
 }
 
 /* BORDER STYLE */
@@ -6207,7 +6236,7 @@ border: ridge !important;
 }
 
 .card > a:hover {
-  color:  !important;
+  color: #525252 !important;
 }
 
 @media (min-width: 576px) {
@@ -6366,14 +6395,14 @@ form {
 /* ANIMATED UNDERLINE */
 .animated-underline
 {
-  color: ;
+  color: #292929;
   position: relative;
   display: inline-block;
 }
 
 .animated-underline a
 {
-    color: ;
+    color: #292929;
     text-decoration: none;
 }
 
@@ -6391,7 +6420,7 @@ form {
 }
 
 .animated-underline a:hover {
-    color:  !important;
+    color: #000000 !important;
 }
 
 .animated-underline:hover::after
@@ -6672,8 +6701,8 @@ input[type="color"],
 input[type="button"] {
   display: inline-block;
   font-weight: 400;
-  color: ;
-  background-color: ;
+  color: #000000;
+  background-color: #ffffff;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -6693,12 +6722,12 @@ button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-  background-color:  !important;
-  color:  !important;
+  background-color: #D6D6D6 !important;
+  color: #000000 !important;
 }
 
 input:disabled, input[readonly] {
-    background-color: ;
+    background-color: #D6D6D6;
     opacity: 1;
     cursor: not-allowed;
 }
@@ -6846,7 +6875,7 @@ input:disabled, input[readonly] {
 .nav-bar:hover
 {
     padding: 1rem 1rem 1rem 2rem;
-    background-color: ;
+    background-color: #D6D6D6;
     color: #000000 !important;
     text-decoration: none;
 }
@@ -6959,7 +6988,7 @@ input:disabled, input[readonly] {
 /* PILLS */
 .nav-pills .nav-link.active {
     color: #000000;
-    background-color: ;
+    background-color: #D6D6D6;
 }
 
 .pin

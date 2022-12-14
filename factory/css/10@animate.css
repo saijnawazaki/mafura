@@ -81,14 +81,14 @@
 /* ANIMATED UNDERLINE */
 .animated-underline
 {
-  color: $color-dark-lighten;
+  color: $color-black-light;
   position: relative;
   display: inline-block;
 }
 
 .animated-underline a
 {
-    color: $color-dark-lighten;
+    color: $color-black-light;
     text-decoration: none;
 }
 
@@ -106,7 +106,7 @@
 }
 
 .animated-underline a:hover {
-    color: $color-dark !important;
+    color: $color-black !important;
 }
 
 .animated-underline:hover::after

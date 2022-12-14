@@ -82,7 +82,7 @@
 }
 
 .hover:hover {
-  background-color: $color-light-darken !important;
+  background-color: $color-white-dark !important;
   color: $color-black !important;
 }
 
@@ -183,7 +183,7 @@
 }
 
 .muted {
-    color: $color-muted;
+    color: $color-white-dark;
     pointer-events: none;
     cursor: default;
 }
@@ -201,6 +201,35 @@
   content: "";
   clear: both;
   display: table;
+}
+
+.list-style-none
+{
+  list-style: none;
+}
+
+.width-auto {
+  width: auto;
+}
+
+.image-white-color {
+  filter: contrast(0) brightness(100);
+}
+
+.image-white-color:hover {
+  filter: contrast(1);
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.z-index-fixed-menu {
+  z-index: $zindex-fixed-menu;
 }
 
 /* BORDER STYLE */

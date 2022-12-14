@@ -9,7 +9,7 @@
 .nav-bar:hover
 {
     padding: 1rem 1rem 1rem 2rem;
-    background-color: $color-light-darken;
+    background-color: $color-white-dark;
     color: $color-black !important;
     text-decoration: none;
 }
@@ -122,5 +122,5 @@
 /* PILLS */
 .nav-pills .nav-link.active {
     color: $color-black;
-    background-color: $color-light-darken;
+    background-color: $color-white-dark;
 }

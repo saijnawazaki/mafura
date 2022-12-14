@@ -77,7 +77,7 @@
 }
 
 .card > a:hover {
-  color: $color-dark-lighten !important;
+  color: $color-black-lighter !important;
 }
 
 @media (min-width: 576px) {
